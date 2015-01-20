@@ -9,10 +9,11 @@ namespace ModifyBitAtGivenPosition
         
        {
             int newNumber=new int();
-            Console.WriteLine("enter the number the value of k and the position");
+            Console.WriteLine("enter the number"); 
             int number = int.Parse(Console.ReadLine());
-           
+            Console.WriteLine("Enter the position");
             int position = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the number k");
             byte k = byte.Parse(Console.ReadLine());
             
             if (k == 1)

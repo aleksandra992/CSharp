@@ -9,18 +9,7 @@ namespace BitExchange
         static void Main()
         {
             Console.WriteLine("Enter the number(at most to be 32 bits)");
-            /*   long number = long.Parse(Console.ReadLine());
-               long number1 = ( (number&(1 << 3)) << 24) | number;
-               long number2 = ( number&(1 << 4) << 25) | number;
-               long number3 = (number&(1 << 5)<< 26) | number;
-            
-
-               long number11 = ((number & (1 << 24)) >> 21) | number;
-               long number21 = ((number & (1 << 25)) >> 21) | number;
-               long number22 = ((number & (1 << 26)) >> 21) | number;
-               long newNumber1 = number1 | number2 | number3|number11|number21|number22;
-               Console.WriteLine(newNumber1);
-             */
+          
            
             uint number = uint.Parse(Console.ReadLine());
             BitArray b = new BitArray(new int[] {(int) number });//convert the integer into array of bits(true or false)

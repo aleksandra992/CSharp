@@ -10,8 +10,9 @@ namespace CheckBitAtGivenPosition
     {
         static void Main()
         {
-            Console.WriteLine("Enter the number n and position p");
+            Console.WriteLine("Enter the number n");
             int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the number p");
             int p = int.Parse(Console.ReadLine());
             if ((int)(n >> p) % 2 == 0)//move the bits from the number n, p positions to the right and check if the first bit from the right is 0 or 1 with checking if the number is odd or even
             {
