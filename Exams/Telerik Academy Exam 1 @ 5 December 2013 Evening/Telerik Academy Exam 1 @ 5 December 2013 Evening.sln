@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeaceOfCake", "PeaceOfCake\PeaceOfCake.csproj", "{07205CCE-4A16-4036-9684-D2C0ACA16C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngryFemaleGPS", "AngryFemaleGPS\AngryFemaleGPS.csproj", "{DC7A3111-5587-4377-8D34-DCA3390AEBA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnesAndZeros", "OnesAndZeros\OnesAndZeros.csproj", "{660531EC-F654-414A-ACC4-313C8F7C4C7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07205CCE-4A16-4036-9684-D2C0ACA16C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07205CCE-4A16-4036-9684-D2C0ACA16C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07205CCE-4A16-4036-9684-D2C0ACA16C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07205CCE-4A16-4036-9684-D2C0ACA16C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7A3111-5587-4377-8D34-DCA3390AEBA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7A3111-5587-4377-8D34-DCA3390AEBA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7A3111-5587-4377-8D34-DCA3390AEBA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7A3111-5587-4377-8D34-DCA3390AEBA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660531EC-F654-414A-ACC4-313C8F7C4C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660531EC-F654-414A-ACC4-313C8F7C4C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660531EC-F654-414A-ACC4-313C8F7C4C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660531EC-F654-414A-ACC4-313C8F7C4C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
