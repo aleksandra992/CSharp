@@ -38,7 +38,7 @@ class Program
                     if (s[j] == '1')
                     {
                         str += integers[j] + "+";
-                        //Console.Write(integers[j] + ((j==s.Length-1)?"":"+"));
+                        Console.Write(integers[j] + ((j==s.Length-1)?"":"+"));
                     }
                    
 
