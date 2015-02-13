@@ -1,2 +1,2 @@
-# CSharp
-Useful materials and exercises for CSharp
+
+Useful materials and exercises
