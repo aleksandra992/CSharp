@@ -11,62 +11,52 @@ namespace FlappyBird
     {
         static void Main(string[] args)
         {
-
+            
             Console.BufferWidth = Console.WindowWidth;
             Console.BufferHeight = Console.WindowHeight;
             Bird b = new Bird();
             b.Y = Console.WindowHeight / 2;
             b.X = 15;
-            Obstacle downObstacle1=new Obstacle();
-            Obstacle downObstacle2=new Obstacle();
-            Obstacle downObstacle3=new Obstacle();
-            Obstacle downObstacle4=new Obstacle();
-            downObstacle1.height=8;
-            downObstacle2.height=10;
-            downObstacle3.height=10;
-            downObstacle4.height=14;
-
-            downObstacle1.X=20;
-            downObstacle2.X=40;
-            downObstacle3.X=70;
-            downObstacle4.X=85;
-
-             downObstacle1.Y=Console.WindowHeight-downObstacle1.height;
-            downObstacle2.Y=Console.WindowHeight-downObstacle2.height;
-            downObstacle3.Y=Console.WindowHeight-downObstacle3.height;
-            downObstacle4.Y=Console.WindowHeight-downObstacle4.height;
+            //down obstacles
+            
 
             List<Obstacle> downObstacles=new List<Obstacle>();
-            downObstacles.Add(downObstacle1);
-            downObstacles.Add(downObstacle2);
-            downObstacles.Add(downObstacle3);
-            downObstacles.Add(downObstacle4);
+             List<Obstacle> upObstacles = new List<Obstacle>();
+             int j = 4;
+             int pom = 0;
+            for (int i = 0; i < 30; i++)
+            {
+                if (i < 20)
+                {
+                    downObstacles.Add(new Obstacle(j + 1, (i * 40) + i, Console.WindowHeight - (j + 1)));
+                    upObstacles.Add(new Obstacle(j + 1, (i * 40) + i, 0));
+                    j++;
+                }
+                else
+                    if (i >= 20 && i < 25)
+                    {
+                        downObstacles.Add(new Obstacle(j + 1, (i * 40) + i, Console.WindowHeight - (j + 1)));
+                        upObstacles.Add(new Obstacle(j + 1, (i * 40) + i, 0));
+                        pom = j + 1 ;
+                        
 
-            Obstacle upObstacle1=new Obstacle();
-             Obstacle upObstacle2=new Obstacle();
-             Obstacle upObstacle3=new Obstacle();
-             Obstacle upObstacle4=new Obstacle();
+                    }
+                    else
+                    {
+                        
+                        downObstacles.Add(new Obstacle(pom + 1, (i * 40) + i, Console.WindowHeight - (pom + 1)));
+                        upObstacles.Add(new Obstacle(pom + 1, (i * 40) + i, 0));
+                    }
+                
+                
 
-            upObstacle1.height=10;
-            upObstacle2.height=8;
-            upObstacle3.height=8;
-            upObstacle4.height=4;
-            upObstacle1.X = 20;
-            upObstacle2.X = 40;
-            upObstacle3.X = 70;
-            upObstacle4.X = 85;
-            upObstacle1.Y = 0;
-            upObstacle2.Y = 0;
-            upObstacle3.Y = 0;
-            upObstacle4.Y = 0;
-            List<Obstacle> upObstacles = new List<Obstacle>();
-            upObstacles.Add(upObstacle1);
-            upObstacles.Add(upObstacle2);
-            upObstacles.Add(upObstacle3);
-            upObstacles.Add(upObstacle4);
+            }
+               
+            
+            
 
             Boundaries bnd = new Boundaries();
-            bnd.height = 25 ;
+            bnd.height = Console.WindowHeight ;
             bnd.leftX = 2;
             bnd.leftY = 0;
             bnd.rightX = 75;
@@ -74,6 +64,25 @@ namespace FlappyBird
           
           while (true)
           {
+              if (upObstacles.Count == 0 && downObstacles.Count == 0)
+              {
+                  Console.WriteLine("Finish,you got all 100 points");
+                  Thread.Sleep(1000);
+                  return;
+ 
+              }
+              if (Console.KeyAvailable)
+              {
+                  ConsoleKeyInfo firstPressedKey = Console.ReadKey(true);
+                  if (firstPressedKey.Key == ConsoleKey.UpArrow)
+                  {
+                      b.Y -= 2;
+                  }
+
+
+              }
+
+              b.Y++;
 
               ReDraw(b,upObstacles, downObstacles,bnd);
               if (b.Y <= 0 || b.Y+4 >= Console.WindowHeight)
@@ -81,19 +90,30 @@ namespace FlappyBird
                   Console.Clear();
                   Console.Write("Game over");
                   return;
-              }
-              if (Console.KeyAvailable)
-              {
-                  ConsoleKeyInfo firstPressedKey = Console.ReadKey(true);
-                  if (firstPressedKey.Key == ConsoleKey.UpArrow)
-                  {
-                      b.Y-=2;
-                  }
-
                   
               }
-              b.Y++;
-              Thread.Sleep(100);
+             
+             
+              for (int i = 0; i < downObstacles.Count; i++)
+              {
+                  if (b.Y + b.bird.Length-1 >= downObstacles[i].Y && b.X + b.bird.Length-1 >= downObstacles[i].X)
+                  {
+                      Console.Clear();
+                      Console.WriteLine("Game over");
+                      return;
+                  }
+              }
+              for (int i = 0; i < upObstacles.Count; i++)
+              {
+                  if (b.Y+1 <= upObstacles[i].Y + upObstacles[i].height && b.X + b.bird.Length-1 >= upObstacles[i].X)
+                  {
+                      Console.Clear();
+                      Console.WriteLine("Game over");
+                      return;
+                  }
+              }
+         
+              Thread.Sleep(30);
               Console.Clear();
               
              
@@ -132,7 +152,7 @@ namespace FlappyBird
 
                 }
                 downObstacles[i].Y = downStartY;
-                downObstacles[i].X--;
+                downObstacles[i].X-=3;
             }
             int k = 0;
             for (int i = 0; i < upObstacles.Count; i++)
@@ -167,7 +187,7 @@ namespace FlappyBird
 
                 }
                 upObstacles[i].Y = upStartY;
-                upObstacles[i].X--;
+                upObstacles[i].X-=3;
             }
            
         }
