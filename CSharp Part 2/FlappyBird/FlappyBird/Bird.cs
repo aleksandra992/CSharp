@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace FlappyBird
 {
@@ -12,7 +13,7 @@ namespace FlappyBird
                        "/  \\",
                        "   *>" ,
                       "\\__/"};
-        public int X,Y;
+        public Point position=new Point();
 
     }
 }
