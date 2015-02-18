@@ -29,7 +29,7 @@ using System.Threading.Tasks;
             {
                 
                 tempSum+=array[i];
-               // sequence.Add(array[i]);
+                sequence.Add(array[i]);
                 if (tempSum <= 0)
                 {
                     tempSum = 0;
@@ -41,8 +41,8 @@ using System.Threading.Tasks;
                     if (tempSum > maxSum)
                     {
                         maxSum = tempSum;
-                        sequence.Add(array[i]);
-                       // str.Clear().Append(string.Join(",", sequence));
+                        //sequence.Add(array[i]);
+                      str.Clear().Append(string.Join(",", sequence));
 
 
                     }
@@ -55,6 +55,7 @@ using System.Threading.Tasks;
            // Console.WriteLine(str);
             Console.WriteLine(string.Join(",",sequence));
             Console.WriteLine(maxSum);
+            Console.ReadKey();
         }
     }
 
