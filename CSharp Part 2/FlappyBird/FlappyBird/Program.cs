@@ -305,14 +305,14 @@ namespace FlappyBird
             try
             {
 
-                StreamReader scoreRead = new StreamReader(@"\Score.txt");
+                StreamReader scoreRead = new StreamReader(@"..\Score.txt");
                 string highScore = scoreRead.ReadLine();
                 scoreRead.Close();
                 return highScore;
             }
             catch (FileNotFoundException e)
             {
-                StreamWriter writer=new StreamWriter(@"\Score.txt");
+                StreamWriter writer=new StreamWriter(@"..\Score.txt");
                 writer.WriteLine("0");
                 writer.Close();
                 return "0";
@@ -331,7 +331,7 @@ namespace FlappyBird
         static void WriteScoreInFile()
         {
 
-            StreamReader scoreRead = new StreamReader(@"\Score.txt");
+            StreamReader scoreRead = new StreamReader(@"..\Score.txt");
 
             string highScore = scoreRead.ReadLine();
 
@@ -340,16 +340,16 @@ namespace FlappyBird
             {
                 if (int.Parse(highScore) < points)
                 {
-                    var fs = new FileStream(@"\Score.txt", FileMode.Truncate); // delete all text in the file
+                    var fs = new FileStream(@"..\Score.txt", FileMode.Truncate); // delete all text in the file
                     fs.Close();
-                    StreamWriter file = new StreamWriter(@"\Score.txt");
+                    StreamWriter file = new StreamWriter(@"..\Score.txt");
                     file.WriteLine(points.ToString());
                     file.Close();
                    }
             }
             else
             {
-                StreamWriter file = new StreamWriter(@"\Score.txt");
+                StreamWriter file = new StreamWriter(@"..\Score.txt");
                 file.WriteLine(points.ToString());
                 file.Close();
                 
