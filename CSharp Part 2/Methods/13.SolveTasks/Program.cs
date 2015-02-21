@@ -46,9 +46,18 @@ namespace _13.SolveTasks
                     }
                 case 3:
                     {
-                        Console.WriteLine("Enter linear equation(a*x+b=0)");
-                        string s=Console.ReadLine();
-                        Console.WriteLine("x="+ LinearEquation(s));
+                        Console.WriteLine("Enter a:");
+                        int a=int.Parse(Console.ReadLine());
+                        if (a == 0)
+                        {
+                            Console.WriteLine("a can not be zero");
+                            
+                            Main();
+                            break;
+                        }
+                        Console.WriteLine("enter b");
+                        int b = int.Parse(Console.ReadLine());
+                        Console.WriteLine("x="+ LinearEquation(a,b));
                         Main();
                         break;
                     }
@@ -72,11 +81,11 @@ namespace _13.SolveTasks
         {
             return numbers.Average();
         }
-        static double LinearEquation(string s)
+        static double LinearEquation(int a,int b)
         {
-            double res = 0;
+            return (-1) * b / a;
             
-            return res;
+            
         }
     }
 }

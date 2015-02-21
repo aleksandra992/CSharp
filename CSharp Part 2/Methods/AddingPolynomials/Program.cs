@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AddingPolynomials
+namespace _11.AddingPolynomials
 {
     class Program
     {

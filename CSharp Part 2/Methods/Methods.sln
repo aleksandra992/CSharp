@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.SortingArray", "9.Sorting
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.N Factorial", "10.N Factorial\10.N Factorial.csproj", "{F6741527-BD88-484A-B5BD-1274F005F622}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.AddingPolynomials", "AddingPolynomials\10.AddingPolynomials.csproj", "{55EC74BB-CACF-4FB0-ACDD-BE749765D58B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.AddingPolynomials", "AddingPolynomials\11.AddingPolynomials.csproj", "{55EC74BB-CACF-4FB0-ACDD-BE749765D58B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.SubtractingPolynomials", "12.SubtractingPolynomials\12.SubtractingPolynomials.csproj", "{216CC048-0809-4F80-A49B-ED8B6597428D}"
 EndProject

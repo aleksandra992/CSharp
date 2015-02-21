@@ -9,21 +9,22 @@ namespace _8.NumberAsArray
     class Program
     {
         static void Main(string[] args)
-       {
+        {
+            Console.Write("Enter the first number");
             string n = Console.ReadLine();
+            Console.Write("Enter the second number");
             string n1 = Console.ReadLine();
-            Console.WriteLine(string.Join("",AddIntegers(n, n1)));
+            Console.WriteLine(string.Join("", AddIntegers(n, n1)));
             Console.ReadKey();
         }
         static List<int> AddIntegers(string num1, string num2)
         {
-            char [] n1=num1.ToCharArray();
-            Array.Reverse(n1);
+            char[] n1 = num1.ToCharArray();
+          
+
+            char[] n2 = num2.ToCharArray();
             
 
-          char []n2 = num2.ToCharArray();
-            Array.Reverse(n2);
-           
 
             int length = 0;
             List<int> result = new List<int>();
@@ -32,44 +33,55 @@ namespace _8.NumberAsArray
                 length = n1.Length;
             }
             else
-                length =n2.Length;
-            int i; 
-            int sumDigits=0;
-            int remainder=0;
-            int devision=0;
+                length = n2.Length;
+            int i;
+            int sumDigits = 0;
+            int remainder = 0;
+            int devision = 0;
             int sum = 0;
-            for ( i = 0; i < length; i++)
+            for (i = 0; i < length; i++)
             {
                 
-                 sum = int.Parse(n1[i].ToString()) + int.Parse(n2[i].ToString());
-                
-                 devision = sum/ 10;
-                 remainder = sum % 10;
-                result.Add((char)(remainder+devision));
-                
+
+                sum = int.Parse(n1[i].ToString()) + int.Parse(n2[i].ToString())+devision;
+                remainder = sum % 10;
+                result.Add((char)(remainder));
+                devision = sum / 10;
+
+
             }
+
+            
             while (i < n1.Length)
             {
+
+
+                sum = int.Parse(n1[i].ToString()) + devision;
                
-               
-                sum=int.Parse(n1[i].ToString())+devision;
-                devision=sum/10;
-                remainder=sum%10;
-                result.Add(remainder+devision);
+                remainder = sum % 10;
+                result.Add(remainder);
+                devision = sum / 10;
                 i++;
-                
+
             }
+
             while (i < n2.Length)
             {
                 sum = int.Parse(n2[i].ToString()) + devision;
-                devision = sum / 10;
+                
                 remainder = sum % 10;
-                result.Add(remainder + devision);
+                result.Add(remainder);
+                devision = sum / 10;
                 i++;
             }
+            if (devision != 0)
+            {
+                result.Add(devision);
+            }
 
-              result.Reverse();
-              return result;
+
+            result.Reverse();
+            return result;
         }
     }
 }

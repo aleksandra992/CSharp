@@ -4,49 +4,51 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+namespace _15NumberCalculations
+{
     class Program
     {
         static void Main(string[] args)
         {
 
-            Console.WriteLine("The average of 1, 2 and 3 is " + Average(1, 2, 3));
-            Console.WriteLine("The average of 1, 2, 3 and 4 is " + Average(1, 2, 3, 4));
-            Console.WriteLine("The sum of 4, 5 and 3 is " + Sum(4, 5, 3));
-            Console.WriteLine("The min of 1, 2 and 3 is " + Min(1, 2, 3));
-            Console.WriteLine("The max of 5, 10 and 6 is " + Max(5, 10, 6));
-            Console.WriteLine("The product of 1, 2 and 3 is " + Product(1, 2, 3));
-            Console.WriteLine("The product of 1, 2,3,4,5 and 6 is " + Product(1, 2, 3, 4, 5, 6));
-            Console.ReadKey();
+            Console.WriteLine("Average of   2.05 and 3.05 is" + Average(2.05, 3.05) + " Sum of 2,5.7,3,4  is " + Sum(2, 5.7, 3, 4) + " Max of  1,4,2,3,7.5 is " + Max(1, 4, 2, 3, 7.5) + " Min of 1,4,2,3,7.5 is " + Min(1, 4, 2, 3, 7.5) + " Product of 1,2.5,3,4.5f is " + Product(1, 2.5, 3, 4.5f));
+
         }
-        static double Average(params int[] numbers)
+
+        static T Average<T>(params T[] numbers)
         {
-            return numbers.Average();
+            dynamic avg = 0;
+            foreach (T k in numbers)
+            {
+                avg += k;
+            }
+
+            avg = avg / numbers.Length;
+            return avg;
+
+
         }
-      /*  static T Aver<T>(T[] numbers)
-        {
-            T num = numbers.Length;
-            return 
-                
-            
-        }
-       * */
-        
-        static int Min(params int[] number)
+        static T Min<T>(params T[] numbers)
         {
             return numbers.Min();
         }
-        static int Max(params int[] numbers)
+        static T Max<T>(params T[] numbers)
         {
             return numbers.Max();
         }
-        static int Sum(params int[] numbers)
+        static T Sum<T>(params T[] numbers)
         {
-            return numbers.Sum();
+            dynamic sum = 0; ;
+            foreach (T k in numbers)
+            {
+                sum += k;
+            }
+
+            return sum;
         }
-        static int Product(params int[] numbers)
+        static T Product<T>(params T[] numbers)
         {
-            int product = 1;
+            dynamic product = 1;
             foreach (var number in numbers)
             {
 
@@ -55,4 +57,4 @@ using System.Threading.Tasks;
             return product;
         }
     }
-
+}
