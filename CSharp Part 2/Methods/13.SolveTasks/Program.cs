@@ -46,20 +46,71 @@ namespace _13.SolveTasks
                     }
                 case 3:
                     {
-                        Console.WriteLine("Enter a:");
-                        int a=int.Parse(Console.ReadLine());
-                        if (a == 0)
+                        Console.WriteLine("Enter ax+b=0 equation");
+                        string equation = Console.ReadLine();
+                        List<string> numbers = new List<string>();
+                        StringBuilder number = new StringBuilder();
+                        if (!equation.Contains("x"))
                         {
-                            Console.WriteLine("a can not be zero");
-                            
+                            Console.WriteLine("You must enter a>0");
                             Main();
-                            break;
+                            return;
                         }
-                        Console.WriteLine("enter b");
-                        int b = int.Parse(Console.ReadLine());
-                        Console.WriteLine("x="+ LinearEquation(a,b));
+                        for (int i = 0; i < equation.Length; i++)
+                        {
+                            if (equation[i] == '-')
+                            {
+                                number.Append("-");
+                            }
+                            else
+                                if (equation[i] == '+')
+                                {
+                                    number.Append("+");
+                                }
+                                else
+                                    if (char.IsDigit(equation[i]))
+                                    {
+                                        number.Append(equation[i]);
+
+                                    }
+                                    else
+                                        if (equation[i] == 'x')
+                                        {
+                                            numbers.Add(number.ToString());
+                                            number.Clear();
+                                        }
+                                        else
+                                            if (equation[i] == '=')
+                                            {
+                                                break;
+                                            }
+
+
+
+                        }
+                        if (numbers[0] == "0")
+                        {
+                            Console.WriteLine("a shoulsd not be zero");
+                            Main();
+                            return;
+                            
+                        }
+                        if (number.Length != 0)
+                        {
+                            numbers.Add(number.ToString());
+                        }
+                        float a = float.Parse(numbers[0]);
+                        float b;
+                        if (numbers.Count == 1)
+                        {
+                            b = 0;
+                        }
+                        else
+                            b = float.Parse(numbers[1]);
+                        Console.WriteLine("x={0}",b/a);
                         Main();
                         break;
+
                     }
                 default:
                     {
@@ -81,11 +132,11 @@ namespace _13.SolveTasks
         {
             return numbers.Average();
         }
-        static double LinearEquation(int a,int b)
+        static double LinearEquation(int a, int b)
         {
             return (-1) * b / a;
-            
-            
+
+
         }
     }
 }
