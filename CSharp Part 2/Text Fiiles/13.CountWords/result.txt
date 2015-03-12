@@ -1,0 +1,5 @@
+he 5
+is 3
+I 2
+she 1
+gg 0

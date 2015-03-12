@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24.OrderWords", "24.OrderWo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25.ExtractTextFromHTML", "25.ExtractTextFromHTML\25.ExtractTextFromHTML.csproj", "{4D102257-5056-4E05-86A6-BBB2FAD4CF26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.StringsInCSharp", "1.StringsInCSharp\1.StringsInCSharp.csproj", "{1DAAB852-9B2B-43AA-B3CD-3CAF2D757A34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{4D102257-5056-4E05-86A6-BBB2FAD4CF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D102257-5056-4E05-86A6-BBB2FAD4CF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D102257-5056-4E05-86A6-BBB2FAD4CF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAAB852-9B2B-43AA-B3CD-3CAF2D757A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAAB852-9B2B-43AA-B3CD-3CAF2D757A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAAB852-9B2B-43AA-B3CD-3CAF2D757A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAAB852-9B2B-43AA-B3CD-3CAF2D757A34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

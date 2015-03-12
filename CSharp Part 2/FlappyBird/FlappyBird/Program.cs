@@ -14,9 +14,12 @@ namespace FlappyBird
         static public int points = 0;
         static void Main()
         {
+            Console.BufferWidth = Console.WindowWidth = 150;
+            Console.BufferHeight = Console.WindowHeight = 41;
+            SplashScreen.SplashScreenStart();
+            Menu();
             HighScore();
-            Console.BufferWidth = Console.WindowWidth=150;
-            Console.BufferHeight = Console.WindowHeight=41;
+            
             Bird b = new Bird();
             b.position.Y = Console.WindowHeight / 2;
             b.position.X = 15;
@@ -326,6 +329,30 @@ namespace FlappyBird
             
             
         }
+        static public ConsoleKeyInfo Menu()
+        {
+            Console.Clear();
+            Console.CursorVisible = false;
+            Console.WriteLine(@"
+                                      #####    ##### ############ ######    #####  ####    ####
+                                      ######  ###### ####         #######   #####  ####    ####
+                                      ############## ###########  ##### ##  #####  ####    ####
+                                      #####    ##### ###########  #####  ## #####  ####    #### 
+                                      #####    ##### ####         #####   #######  ####    ####  
+                                      #####    ##### ############ #####    ######    ######## ");
+
+
+            Console.WriteLine();
+            Console.SetCursorPosition(Console.WindowWidth / 2 - 7, Console.WindowHeight / 2 - 7);
+            Console.WriteLine("1. START GAME");
+            Console.SetCursorPosition(Console.WindowWidth / 2 - 7, Console.WindowHeight / 2 - 6);
+            Console.WriteLine("2. SCORE");
+            Console.SetCursorPosition(Console.WindowWidth / 2 - 7, Console.WindowHeight / 2 - 5);
+            Console.WriteLine("3. EXIT");
+            var result = Console.ReadKey(true);
+            return result;
+
+        }//MENU - Emo - IN PROGRESS
         static public void PlaySound(string s)
         {
             var startScreen = new System.Media.SoundPlayer(s);
