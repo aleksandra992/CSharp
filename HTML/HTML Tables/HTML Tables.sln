@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.HTMLTables", "1.HTMLTables\1.HTMLTables.csproj", "{48B3D9DF-20B5-4816-9971-0C4DF2E04612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.HTMLForm", "2.HTMLForm\2.HTMLForm.csproj", "{9EDF29CC-EB5B-48AF-9937-7D73E6B896E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Calculator", "3.Calculator\3.Calculator.csproj", "{1C462CE7-A20A-4E2A-AEE7-FB352A5A4815}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48B3D9DF-20B5-4816-9971-0C4DF2E04612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B3D9DF-20B5-4816-9971-0C4DF2E04612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B3D9DF-20B5-4816-9971-0C4DF2E04612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B3D9DF-20B5-4816-9971-0C4DF2E04612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EDF29CC-EB5B-48AF-9937-7D73E6B896E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDF29CC-EB5B-48AF-9937-7D73E6B896E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDF29CC-EB5B-48AF-9937-7D73E6B896E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDF29CC-EB5B-48AF-9937-7D73E6B896E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C462CE7-A20A-4E2A-AEE7-FB352A5A4815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C462CE7-A20A-4E2A-AEE7-FB352A5A4815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C462CE7-A20A-4E2A-AEE7-FB352A5A4815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C462CE7-A20A-4E2A-AEE7-FB352A5A4815}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
