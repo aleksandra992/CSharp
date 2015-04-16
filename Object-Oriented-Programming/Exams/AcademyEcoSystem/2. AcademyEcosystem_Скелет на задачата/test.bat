@@ -1,0 +1,1 @@
+Academy.exe <sample-input.txt >sample-output.txt

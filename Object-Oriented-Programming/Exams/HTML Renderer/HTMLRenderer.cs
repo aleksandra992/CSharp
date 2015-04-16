@@ -36,20 +36,23 @@ namespace HTMLRenderer
     {
 		public IElement CreateElement(string name)
 		{
-            IElement element = new Element(name);
-            return element;
+            //IElement element = new Element(name);
+            //return element;
+            throw new NotImplementedException();
 		}
 
 		public IElement CreateElement(string name, string content)
 		{
-            IElement element = new Element(name, content);
-            return element;
+            //IElement element = new Element(name, content);
+            //return element;
+            throw new NotImplementedException();
 		}
 
 		public ITable CreateTable(int rows, int cols)
 		{
-            ITable table = new Table(rows, cols);
-            return table;
+            //ITable table = new Table(rows, cols);
+            //return table;
+            throw new NotImplementedException();
 		}
 	}
 

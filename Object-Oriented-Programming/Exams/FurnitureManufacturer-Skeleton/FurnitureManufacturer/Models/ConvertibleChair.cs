@@ -11,7 +11,7 @@
         public ConvertibleChair(string model,decimal price,decimal height,string material,int numberOfLegs)
             :base(model,price,height,material,numberOfLegs)
         {
-
+            isConverted = false;
         }
         private decimal InitialHeight
         {
@@ -39,21 +39,37 @@
                 this.isConverted = value;
             }
         }
-
+        public override decimal Height//od nih..treba da smenam nesto vo get
+        {
+            get
+            {
+                if (this.isConverted)
+                {
+                    return 0.01m;
+                }
+                else
+                return base.Height;
+            }
+            protected set
+            {
+                base.Height = value;
+            }
+        }
         public void Convert()
         {
-            if (IsConverted == false)//if is normal-put it to converted
-            {
-                this.InitialHeight = this.Height;
-                this.Height = 0.10m;
-                IsConverted = true;
-            }
+            this.isConverted = !this.isConverted;
+            //if (IsConverted == false)//if is normal-put it to converted
+            //{
+            //    this.InitialHeight = this.Height;
+            //    this.Height = 0.10m;
+            //    IsConverted = true;
+            //}
 
-            else
-            {
-                this.Height = this.InitialHeight;
-                IsConverted = false;
-            }
+            //else
+            //{
+            //    this.Height = this.InitialHeight;
+            //    IsConverted = false;
+            //}
         }
         public override string ToString()
         {

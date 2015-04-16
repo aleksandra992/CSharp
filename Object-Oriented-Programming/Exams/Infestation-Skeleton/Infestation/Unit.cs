@@ -56,6 +56,7 @@ namespace Infestation
         }
 
         private ICollection<ISupplement> supplements;
+
         //public ICollection<ISupplement> Supplements
         //{
         //    get

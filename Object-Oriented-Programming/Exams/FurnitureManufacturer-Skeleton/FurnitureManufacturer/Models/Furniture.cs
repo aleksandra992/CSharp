@@ -4,8 +4,8 @@ namespace FurnitureManufacturer.Models
 {
     using FurnitureManufacturer.Interfaces;
     using System;
-
-    public class Furniture : IFurniture
+    //imaah ispusteno abstract
+    public abstract class Furniture : IFurniture
     {
         private string model;
         private decimal price;
@@ -20,7 +20,7 @@ namespace FurnitureManufacturer.Models
             this.Material = material;
 
         }
-        public string Model
+        public virtual string Model//nemaah virtual
         {
             get
             {
@@ -28,20 +28,22 @@ namespace FurnitureManufacturer.Models
             }
             protected set
             {
-                if (string.IsNullOrEmpty(value) || value.Length < 3)
-                    throw new ArgumentException("The value cannot be empty, null or less than 3 symbols");
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentException("The model cannot be empty or null ");
+                if (value.Length < 3)
+                    throw new ArgumentException("The model cannot have less than 3 symbols");
                 this.model = value;
             }
 
         }
 
-        public string Material
+        public virtual string Material//nemaah virtual
         {
             get;
-            protected set;
+            protected set;//koga nemame proverki pravime samo properti
         }
 
-        public decimal Price
+        public virtual decimal Price//nemaah virtual
         {
             get
             {
@@ -57,7 +59,7 @@ namespace FurnitureManufacturer.Models
             }
         }
 
-        public decimal Height
+        public virtual decimal Height//nemaah virtual
         {
             get
             {
@@ -85,6 +87,10 @@ namespace FurnitureManufacturer.Models
             if (Object.Equals(this.Material, furniture.Model))
                 return false;
             return true;
+        }
+        public override string ToString()
+        {
+            return string.Format("Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}", this.Model, this.Material, this.Price, this.Height);
         }
     }
 }

@@ -47,7 +47,7 @@ namespace FurnitureManufacturer.Models
             }
             protected set
             {
-                if (value.Length != 10 || !DigitsValidate(value))
+                if (value==null || value.Length != 10 || !DigitsValidate(value))
                 {
                     throw new ArgumentException("The registration number should be 10 symbols, and the symbols must be digits");
                 }

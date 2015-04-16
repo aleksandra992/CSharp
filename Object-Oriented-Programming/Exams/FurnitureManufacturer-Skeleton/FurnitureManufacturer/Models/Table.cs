@@ -48,10 +48,10 @@
         }
         public override string ToString()
         {
-          
+          return base.ToString()+
 
-           return string.Format("Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Length: {5}, Width: {6}, Area: {7}"
-            , this.GetType().Name, this.Model, this.Material, this.Price, this.Height, this.Length, this.Width, this.Area);
+           string.Format(" Length: {0}, Width: {1}, Area: {2}"
+            , this.Length, this.Width, this.Area);
            
         }
     }
