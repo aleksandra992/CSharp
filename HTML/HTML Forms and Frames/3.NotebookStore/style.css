@@ -1,0 +1,20 @@
+﻿body {
+}
+.borderCom {
+border:2px solid #4b4747;
+}
+.mainTable {
+border:2px solid #4b4747;
+border-radius:5px 5px 5px 5px;
+padding:3px 3px 3px 3px;
+}
+label {
+font-family:Calibri;
+font-size:large;
+font-weight:bold;
+color:#4b4747;
+}
+a {
+color:#0082ff;
+font-size:x-large;
+}

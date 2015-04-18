@@ -1,0 +1,30 @@
+﻿body {
+}
+td {
+border-left:1px solid black;
+border-bottom:1px solid black;
+text-align:center;
+}
+table {
+border-top:1px solid black;
+border-right:1px solid black;
+width:410px;
+}
+label {
+font-weight:bold;
+
+}
+.blueColor {
+background-color:aquamarine;
+width:450px;
+}
+.textBoxWidth {
+width:230px;
+
+}
+.leftAlign {
+    text-align:left;
+}
+.textAreaWidth {
+width:200px;
+}
