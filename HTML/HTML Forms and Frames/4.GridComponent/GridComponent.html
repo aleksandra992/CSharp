@@ -2,91 +2,119 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <table>
-       
+    <table class="gridTable" cellspacing="0">
+
         <thead>
             <tr>
-                <th colspan="6"><label>Drag a column header and drop  it here to group by that column</label></th>
+                <td class="headergrid" colspan="6"><label>Drag a column header and drop  it here to group by that column</label></td>
             </tr>
             <tr>
-                <th><label>ProductID</label></th>
-                <th><label>Product Name</label></th>
-          
-                <th><label>Unit price</label></th>
-                <th><label>Quantity per unit</label></th>
-                <th><label>Units in stock</label></th>
-                <th><label>Discontinued</label></th>
+
+                <th class="headergrid"><label>ProductID</label></th>
+                <th class="headergrid"><label>Product Name</label></th>
+
+                <th class="headergrid"><label>Unit price</label></th>
+                <th class="headergrid"><label>Quantity per unit</label></th>
+                <th class="headergrid"><label>Units in stock</label></th>
+                <th class="headergrid"><label>Discontinued</label></th>
+
             </tr>
         </thead>
 
         <tfoot>
-            <tr>
-                <td colspan="6">
-                    <button></button>
-                    <button></button>
+            <tr class="footer">
+                <td colspan="6" class="gridTd">
+                    <button class="arrowBtn leftEndBtn"></button>
+                    <button class="arrowBtn leftBtn"></button>
                     <a href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>
                     <a href="#">5</a>
                     <a href="#">...</a>
-                    <button></button>
-                    <button></button>
-                    <label>335104 items in 33511 pages</label>
+                    <button class="arrowBtn rightBtn"></button>
+                    <button class="arrowBtn rightEndBtn"></button>
+                    <label class="floatRight">335104 items in 33511 pages</label>
                 </td>
-            </tr>
+                </trclass="footer">
         </tfoot>
 
         <tbody>
             <tr>
-                <td><input type="text" id="idInput" /></td>
-                <td><input type="text" /></td>
-                <td><input type="text" /></td>
-                <td><input type="text" /></td>
-                <td><input type="text" /></td>
-                <td><input type="checkbox" disabled="disabled" /></td>
+                <td class="inputinhead"><input class="productID" type="text" id="idInput" /></td>
+                <td class="inputinhead"><input class="productName" type="text" /></td>
+                <td class="inputinhead">
+                    <table style="border-style:none;">
+                        <tr>
+                            <td>
+                                <input class="price" type="text" />
+                            </td>
+                            <td>
+                                <input type="button" class="arrowBtn filterBtn" value="" />
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </td>
+                <td class="inputinhead"><input class="quantity" type="text" /></td>
+                <td class="inputinhead">
+                    <table>
+                        <tr>
+                            <td>
+                                <input class="units" type="text" />
+                            </td>
+                            <td>
+                                <input type="button" class="arrowBtn filterBtn" value="" />
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+                <td class="inputinhead"><input type="checkbox" /></td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Chai</td>
-                <td>$18.00</td>
-                <td>10 boxes x 20 bags</td>
-                <td>39</td>
-                <td><input type="checkbox" disabled="disabled" /></td>
+                <td class="gridTd">1</td>
+                <td class="gridTd">Chai</td>
+                <td class="gridTd">$18.00</td>
+                <td class="gridTd">10 boxes x 20 bags</td>
+                <td class="gridTd">39</td>
+                <td class="gridTd"><input type="checkbox" disabled="disabled" /></td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Chang</td>
-                <td>$19.00</td>
-                <td>24 - 12 oz bottles</td>
-                <td>17</td>
-                <td><input type="checkbox" checked="checked" disabled="disabled" /></td>
+                <td class="gridTd">2</td>
+                <td class="gridTd">Chang</td>
+                <td class="gridTd">$19.00</td>
+                <td class="gridTd">24 - 12 oz bottles</td>
+                <td class="gridTd">17</td>
+                <td class="gridTd"><input type="checkbox" checked="checked" disabled="disabled" /></td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Annised Syrup</td>
-                <td>$10.00</td>
-                <td>12-500 ml</td>
-                <td>13</td>
-                <td><input type="checkbox" checked="checked" disabled="disabled" /></td>
+                <td class="gridTd">3</td>
+                <td class="gridTd">Annised Syrup</td>
+                <td class="gridTd">$10.00</td>
+                <td class="gridTd">12-500 ml</td>
+                <td class="gridTd">13</td>
+                <td class="gridTd"><input type="checkbox" checked="checked" disabled="disabled" /></td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>ikura</td>
-                <td>$31.00</td>
-                <td>12-1200 ml</td>
-                <td>30</td>
-                <td><input type="checkbox" checked="checked" disabled="disabled" /></td>
+                <td class="gridTd">4</td>
+                <td class="gridTd">ikura</td>
+                <td class="gridTd">$31.00</td>
+                <td class="gridTd">12-1200 ml</td>
+                <td class="gridTd">30</td>
+                <td class="gridTd"><input type="checkbox" checked="checked" disabled="disabled" /></td>
             </tr>
             <tr>
-                <td>5</td>
-                <td>Uncle bob Pears</td>
-                <td>$35.00</td>
-                <td>300gr</td>
-                <td>50</td>
-                <td><input type="checkbox" disabled="disabled" /></td>
+                <td class="gridTd">5</td>
+                <td class="gridTd">Uncle bob Pears</td>
+                <td class="gridTd">$35.00</td>
+                <td class="gridTd">300gr</td>
+                <td class="gridTd">50</td>
+                <td class="gridTd"><input type="checkbox" disabled="disabled" /></td>
             </tr>
         </tbody>
     </table>

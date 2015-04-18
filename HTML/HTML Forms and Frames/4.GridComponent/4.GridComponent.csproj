@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GridComponent.html" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,115 @@
+﻿body {
+}
+
+.headergrid {
+    border-bottom: solid thin;
+    border-right: solid thin;
+    border-color: #808080;
+    font-weight: 100;
+    font-size: 11px;
+    color: #4b4747;
+    padding-left: 10px;
+    text-align: left;
+    height: 20px;
+    background: linear-gradient(white, lightgray);
+}
+
+.inputinhead {
+    height: 30px;
+    border-right: solid thin;
+    border-bottom: solid thin;
+    border-color: #808080;
+    background: linear-gradient(white, lightgray);
+}
+
+a {
+    text-decoration: none;
+    color: #4b4747;
+}
+a:hover{
+    border-radius:2px;
+    border:solid thin;
+    border-color:brown;
+}
+
+.gridTable {
+    border: solid thin;
+    border-color: #808080;
+    border-radius: 4px;
+}
+
+.gridTd {
+    border-bottom: solid thin;
+    border-right: solid thin;
+    border-color: lightgray;
+    font-size: 11px;
+    color: #4b4747;
+    padding-left: 5px;
+}
+
+input[type=text] {
+    border: solid thin;
+    border-color: #808080;
+}
+
+.productID {
+    width: 30px;
+}
+
+.productName {
+    width: 100px;
+    margin-right: 60px;
+}
+
+.price {
+    width: 50px;
+}
+
+.quantity {
+    width: 70px;
+}
+
+.units {
+    width: 50px;
+}
+
+.filterBtn {
+
+    background-image: url('filter.jpg');
+    margin-right: 40px;
+}
+
+.floatRight {
+    float: right;
+    margin-right: 10px;
+}
+
+.arrowBtn {
+    width: 15px;
+    height: 15px;
+    background-size: 100% 100%;
+    border: solid thin;
+    border-color: #808080;
+    border-radius: 2px;
+}
+
+.leftEndBtn {
+    background-image: url('left_end.jpg');
+}
+
+.leftBtn {
+    background-image: url('left.jpg');
+}
+
+.rightEndBtn {
+    background-image: url('right_end.jpg');
+}
+
+.rightBtn {
+    background-image: url('right.png');
+}
+
+.footer {
+    height: 30px;
+    background: linear-gradient(white, lightgray);
+}
