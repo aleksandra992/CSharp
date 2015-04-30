@@ -1,0 +1,35 @@
+﻿body {
+    font-weight:normal;
+}
+thead {
+color:white;
+background-color:#54B706;
+font-weight:normal;
+background:linear-gradient();
+
+}
+table,tr,th,td {
+border-collapse:collapse;
+font-size:14px;
+border:1px solid #808080;
+}
+tr:nth-child(2n) {
+    background-color:#dbd3d3;
+    }
+th {
+text-align:left;
+font-weight:normal;
+}
+.flagDe{
+
+	height: 15px;
+    width:50px;
+	background: no-repeat;
+    margin-right:3px;
+   margin-left:-20px;
+   display:inline-block;
+}
+.table-header {
+height:25px;
+}
+

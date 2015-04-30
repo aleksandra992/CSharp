@@ -1,0 +1,30 @@
+﻿body table {
+    background-color:#595959;
+    color:#b4afaf;
+    font-size:12px;
+}
+.ticketID {
+font-size:18px;
+
+}
+.italic {
+  
+font-style:italic;
+color:#ddd8d8;
+}
+.yellowLbl {
+      
+
+color:#f3e592;
+
+}
+.red {
+color:red;    
+    }
+.orange {
+color:orange;
+}
+span.yellowLbl#name:before {
+content:"● ";
+color:green;
+}
