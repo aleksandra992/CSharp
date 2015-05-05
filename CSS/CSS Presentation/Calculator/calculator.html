@@ -6,85 +6,82 @@
 </head>
 <body>
     <div class="calculator">
-        <table>
-            <thead>
+        <header id="menu">
+            <nav>
+                <ul>
+                    <li>View</li>
+                    <li>Edit</li>
+                    <li>Help</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="display">
+            <input type="text" value="8854455" />
+        </section>
+
+
+        <section id="binary">
+            <table>
                 <tr>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
 
-                    <td colspan="9">
-                        <nav>
-                            <ul>
-                                <li>View</li>
-                                <li>Edit</li>
-                                <li>Help</li>
-                            </ul>
-                        </nav>
-                    </td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="9"><input type="text" value="8854455" /></td>
-
-                </tr>
-                <tr>
-                    <td colspan="9">
-                        <table>
-                            <tr>
-                                <td>0000</td>
-                                <td>0000</td>
-                                <td>0000</td>
-                                <td>0000</td>
-                                <td>0000</td>
-                                <td>0000</td>
-                                <td>0000</td>
-                                <td>0000</td>
-
-
-                            </tr>
-                            <tr>
-                                <td>63</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>47</td>
-                                <td></td>
-                                <td></td>
-                                <td>32</td>
-                            </tr>
-                            <tr>
-                                <td>0000</td>
-                                <td>0000</td>
-                                <td>1000</td>
-                                <td>0111</td>
-                                <td>0001</td>
-                                <td>1011</td>
-                                <td>1011</td>
-                                <td>0111</td>
-                            </tr>
-                            <tr>
-                                <td>31</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>15</td>
-                                <td></td>
-                                <td></td>
-                                <td>0</td>
-                            </tr>
-                        </table>
-                    </td>
 
                 </tr>
                 <tr>
-                    <td rowspan="3">
-                        <div>
-                            <input type="radio" name="system" />Hex
-                            <input type="radio" name="system" checked />Dec
-                            <input type="radio" name="system" />Oct
-                            <input type="radio" name="system" />Bin
-                        </div>
-                    </td>
-                    <td><button></button></td>
+                    <td>63</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>47</td>
+                    <td></td>
+                    <td></td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>1000</td>
+                    <td>0111</td>
+                    <td>0001</td>
+                    <td>1011</td>
+                    <td>1011</td>
+                    <td>0111</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>15</td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section class="left-radios">
+
+            <input type="radio" name="system" />Hex<br />
+            <input type="radio" name="system" checked />Dec<br />
+            <input type="radio" name="system" />Oct<br />
+            <input type="radio" name="system" />Bin
+
+        </section>
+
+        <section class="operations clearfix">
+            <table>
+                <tr>
+                    <td><button disabled="disabled"></button></td>
                     <td><button>Mod</button></td>
                     <td><button disabled="disabled">A</button></td>
                     <td><button>MC</button></td>
@@ -115,6 +112,19 @@
                     <td><button class="">/</button></td>
                     <td><button class="" disabled="disabled">%</button></td>
                 </tr>
+            </table>
+        </section>
+        <section class="left-radios">
+
+            <input type="radio" name="word" checked />Qword<br />
+            <input type="radio" name="word" />Dword<br />
+            <input type="radio" name="word" />Word<br />
+            <input type="radio" name="word" />Byte
+
+        </section>
+        <section class="operations clearfix" >
+            <table>
+
                 <tr>
                     <td><button class="">Or</button></td>
                     <td><button class="">Xor</button></td>
@@ -133,19 +143,20 @@
                     <td><button class="">2</button></td>
                     <td><button class="">3</button></td>
                     <td><button class="">-</button></td>
-                    <td rowspan="2"><button class="">=</button></td>
+                    <td rowspan="2"><button class="equal">=</button></td>
                 </tr>
                 <tr>
                     <td><button class="">Not</button></td>
                     <td><button class="">And</button></td>
                     <td><button class="" disabled="disabled">F</button></td>
-                    <td colspan="2"><button class="digit">0</button></td>
+                    <td colspan="2"><button class="zero">0</button></td>
                     <td><button class="" disabled="disabled">.</button></td>
                     <td><button class="">+</button></td>
                 </tr>
 
-            </tbody>
-        </table>
+
+            </table>
+        </section>
     </div>
 </body>
 </html>
