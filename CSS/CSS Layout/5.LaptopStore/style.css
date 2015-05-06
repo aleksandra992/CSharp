@@ -1,0 +1,85 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+div#wrapper {
+    width: 800px;
+    height: 600px;
+    border: 2px solid#515151;
+    border-radius: 20px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #515151;
+    width: 700px;
+    margin: auto;
+}
+
+    nav a {
+        color: #00AEEF;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+section {
+    border: 2px solid #515151;
+    padding: 15px;
+    float: left;
+    width: 66%;
+    margin: 10px;
+}
+
+    section article .left {
+        float: left;
+    }
+
+    section article .right {
+        float: right;
+    }
+
+aside {
+    float: left;
+}
+
+fieldset img {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+fieldset {
+    width: 230px;
+    border-color: #515151;
+}
+
+span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.clearfix:after {
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.inline span {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    vertical-align: middle;
+}
+
+li {
+    margin-bottom: 40px;
+}
