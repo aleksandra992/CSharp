@@ -1,0 +1,14 @@
+﻿body {
+}
+div#c {
+float:left;
+width:100px;
+border:1px solid black;
+}
+    div#b {
+    width:500px;
+    border:1px solid green;
+    }
+div#a {
+border:1px solid red;
+}

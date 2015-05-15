@@ -1,0 +1,62 @@
+﻿body {
+    font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+    font-size: 16px;
+}
+
+h1, body,p {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 960px;
+ 
+}
+#wrapper div{
+    width:933px;
+       background: #de28ff; /* Old browsers */
+    background: -moz-linear-gradient(top, #de28ff 0%, #de28ff 15%, #f9dbff 75%, #f9dbff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#de28ff), color-stop(15%,#de28ff), color-stop(75%,#f9dbff), color-stop(100%,#f9dbff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #de28ff 0%,#de28ff 15%,#f9dbff 75%,#f9dbff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #de28ff 0%,#de28ff 15%,#f9dbff 75%,#f9dbff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #de28ff 0%,#de28ff 15%,#f9dbff 75%,#f9dbff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #de28ff 0%,#de28ff 15%,#f9dbff 75%,#f9dbff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de28ff', endColorstr='#f9dbff',GradientType=0 ); /* IE6-9 */
+    border-radius: 15px;
+    border: 1px solid black;
+    padding:20px 30px 30px 30px;
+    box-sizing:border-box;
+    height:210px;
+}
+h1 {
+font-size:29px;
+}
+.left-arrow {
+float:left;
+position:relative;
+top:30px;
+left:-30px;
+}
+.right-arrow {
+float:right;
+position:relative;
+top:30px;
+left:30px;
+}
+p.postedby {
+padding:5px 10px 5px 0;
+box-sizing:border-box;
+border-bottom:1px solid black;
+border-top:1px solid black;
+width:400px;
+text-align:left;
+display:block;
+
+margin-left:15px;
+margin-top:5px;
+}
+p.info {
+margin-top:20px;
+text-align:justify;
+}
+  

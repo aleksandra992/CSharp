@@ -1,0 +1,94 @@
+﻿html,
+body,
+div,
+h1,
+ul,
+li,
+p,
+a,
+img,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size: 16px;
+}
+
+#wrapper {
+    width: 960px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+}
+
+li {
+    margin-left: 5px;
+    float: left;
+    text-align: center;
+    border: 20px solid #808080;
+    box-sizing: border-box;
+    height: 220px;
+    width: 220px;
+    background: #727272; /* Old browsers */
+    background: -moz-linear-gradient(top, #727272 0%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#727272), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #727272 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #727272 0%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #727272 0%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #727272 0%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+ul h3 {
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+
+img {
+    border-radius: 20px;
+    width: 120px;
+    height: 100px;
+}
+
+p.subtitle {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p.click-here {
+    display: none;
+    margin-top: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+li.hover {
+    border-color: #454545;
+    background: #808080;
+}
+
+    li.hover p.subtitle {
+        display: none;
+    }
+
+    li.hover p.click-here {
+        display: block;
+    }
+
+    li.hover img {
+        width: 140px;
+        height: 110px;
+    }
+
+
+
+    li.hover h3 {
+        text-decoration: underline;
+    }

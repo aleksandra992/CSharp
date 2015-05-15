@@ -1,0 +1,76 @@
+﻿html,
+body,
+div,
+h1,
+ul,
+li,
+a,
+p,
+img,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Arial";
+}
+
+
+#root ul {
+    width: 500px;
+    background-color: #205d99;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label {
+    box-sizing: border-box;
+    display: block;
+    height: 45px;
+ 
+    font-size: 20px;
+    text-align: center;
+    color: #efedef;
+}
+
+img {
+    width: 228px;
+    height: 120px;
+    box-sizing: border-box;
+    border: 15px solid #79aee3;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+li {
+   
+       border-bottom: 3px solid #80b4e8;
+    padding-top: 15px;
+}
+
+.preview {
+    display: none;
+    padding: 15px;
+    color: #fdffe0;
+}
+
+    .preview p {
+        text-align: justify;
+    }
+
+.avengers input[type="radio"]:checked + label + .preview {
+    display: block;
+}
+
+.avengers input[type="radio"]:checked + label {
+    color: #80b4e8;
+    font-weight: bold;
+    border: none;
+    font-size: 24px;
+}
