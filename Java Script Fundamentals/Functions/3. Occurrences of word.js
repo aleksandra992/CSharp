@@ -9,9 +9,10 @@ var text="telerik Erik erika erik ";
 var word="erik";
 var IsSensitive=true;
 console.log(occurrencesOfWord(text,word,IsSensitive));
-console.log(occurrencesOfWord(text,word,!IsSensitive));
+console.log(occurrencesOfWord(text,word));
 function occurrencesOfWord(text,word,isSensitive)
 {
+   isSensitive=isSensitive||false;//overloading with default parameters
     var modifier="ig";
 if(isSensitive===true)
 {

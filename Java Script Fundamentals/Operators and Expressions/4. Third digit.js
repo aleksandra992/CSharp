@@ -7,14 +7,14 @@ console.log(thirdDigit(number1));
 console.log(thirdDigit(number2));
 function thirdDigit(number)
 {
-    if(Math.floor(number/100)===0)
+    if(~~(number/100)===0)
     {
         return "The number should be with 3 digits";
     }
     else
     {
-        var digit=Math.floor((number/100))%10;
-        if(digit==7)
+        var digit=(~~(number/100))%10;
+        if(digit==7 || digit==-7)//for negative numbers
         return true;
         return false;
     }
