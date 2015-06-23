@@ -45,8 +45,9 @@ function solve(params)
 
  while(true)
  {
-     previousCol=col;
-     previousRow=row;
+
+     count+=matrix[row][col];
+     matrix[row][col]=0;
      if(directions[row][col]==='dr')
      {
          row+=1;
@@ -73,7 +74,7 @@ function solve(params)
 
      if(row>=numRows || row<0 || col>=numCols|| col<0)
      {
-         count+=matrix[previousRow][previousCol];
+
          return 'successed with '+count;
      }
      if(matrix[row][col]===0)
@@ -81,8 +82,6 @@ function solve(params)
          return 'failed at ('+row+', '+col+')';
      }
 
-     count+=matrix[previousRow][previousCol];
-     matrix[previousRow][previousCol]=0;
  }
 
 

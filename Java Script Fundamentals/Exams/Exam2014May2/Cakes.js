@@ -14,9 +14,9 @@ function solve(params) {
         sum=0;
 for(var i=0;i<=c1Count;i+=1)
 {
-    for(var j=0;j<=c2Count;j+=1)
+    for(var j=0;j<=(s-c1*i)/c2;j+=1)
     {
-        for(var k=0;k<=c3Count;k++)
+        for(var k=0;k<=(s-c2*j-c1*i)/c3;k++)
         {
             if((i*c1 +j*c2+k*c3)<=s)
             {

@@ -1,5 +1,8 @@
 /**
- * Created by Aleksandra on 6/6/2015.
+ Problem 1. Format with placeholders
+
+ Write a function that formats a string. The function should have placeholders, as shown in the example
+ Add the function to the String.prototype
  */
 String.prototype.format=function(options) {
 

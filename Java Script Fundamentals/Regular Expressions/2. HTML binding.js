@@ -1,5 +1,8 @@
 /**
- * Created by Aleksandra on 6/6/2015.
+ Problem 2. HTML binding
+
+ Write a function that puts the value of an object into the content/attributes of HTML tags.
+ Add the function to the String.prototype
  */
 String.prototype.bind=function(bindingString,string)
 {
