@@ -105,7 +105,7 @@ function solve() {
             this.presentations = presentations;
             this.students = [];
             this.examResults = [];
-            this.homeworks=[];
+            this.homeworks = [];
             return this;
         },
         addStudent: function (name) {
@@ -140,72 +140,76 @@ function solve() {
                 })) {
                 throw Error('student ID doesn\'t exist');
             }
-            this.homeworks.push({id:studentID,HomeworkID:homeworkID});
+            this.homeworks.push({id: studentID, HomeworkID: homeworkID});
 
         }
         ,
         pushExamResults: function (results) {
             var copyResults = results.slice();
+            var self = this;
             for (var i = 0; i < results.length; i += 1) {
-                if (!this.students(function (item) {
-                        return item.id === results[i].id;
-                    })) {
-                    throw('Invalid Student ID');
-
+                var result = results[i];
+                if (!isNumber(result.StudentID)) {
+                    throw  Error();
                 }
-                if (!isNumber(results[i].Score)) {
+                if (!isNumber(results[i].score)) {
                     throw Error('The score must be number');
                 }
+                if(result.StudentID>self.students.length)
+                {
+                    throw Error('Invalid student ID');
+                }
+
                 if (!results.some(function (item, index) {
-                        return ((item.id === results[i].id) && (index !== i));
+                        return ((item.StudentID === result.StudentID) && (index !== i));
                     })) {
-                    this.examResults.push(results[i]);
+                    this.examResults.push(result);
 
+                }
+                else {
+                    throw Error('The student cannot be added two times');
                 }
 
             }
-            for(var i=0;i<this.students.length;i+=1){
-                if(!results.some(function(item){
-                        return this.students[i].id===item.id;
-                    })){
-                    this.examResults.push({id:this.students[i].id,Score:0});
+            for (var j = 0; j < this.students.length; j += 1) {
+                var studentIDD = this.students[j].id;
+                if (!results.some(function (item) {
+
+                        return studentIDD === item.StudentID;
+                    })) {
+                    this.examResults.push({StudentID: this.students[j].id, score: 0});
                 }
             }
-        }
-        ,
+        },
         getTopStudents: function () {
-            var finalResults=[];
-            var countOfSubmitted=0;
-            for(var i=0;i<this.students;i++)
-            {
-                var student=this.students[i];
+            var finalResults = [];
+            var countOfSubmitted = 0;
+            for (var i = 0; i < this.students; i++) {
+                var student = this.students[i];
 
-                var studentId=student.id;
-              var student= this.examResults.filter(function(item){
-                   return studentId===item.id;
-               });
-                var scoreExam=student.Score;
-                var countOfAllHomeWorks=this.presentations.length;
-                for(var i=0;i<this.homeworks;i+=1){
-                    var homework=this.homeworks[i];
-                    if(student.id===homework.id)
-                    {
+                var studentId = student.id;
+                var student = this.examResults.filter(function (item) {
+                    return studentId === item.id;
+                });
+                var scoreExam = student.Score;
+                var countOfAllHomeWorks = this.presentations.length;
+                for (var i = 0; i < this.homeworks; i += 1) {
+                    var homework = this.homeworks[i];
+                    if (student.id === homework.id) {
                         countOfSubmitted++;
                     }
                 }
-                var scoreHomework=countOfSubmitted/countOfAllHomeWorks;
-                var Score=(75*scoreExam)/100+(25*scoreHomework)/100;
-                finalResults.push({student:student,Score:Score});
+                var scoreHomework = countOfSubmitted / countOfAllHomeWorks;
+                var Score = (75 * scoreExam) / 100 + (25 * scoreHomework) / 100;
+                finalResults.push({student: student, Score: Score});
             }
-            finalResults= finalResults.sort(function(a,b){
-                return b.Score- a.Score;
+            finalResults = finalResults.sort(function (a, b) {
+                return b.Score - a.Score;
             });
-            if(finalResults.length<=10)
-            {
+            if (finalResults.length <= 10) {
                 return finalResults.slice();
             }
-            return finalResults.slice(0,10);
-
+            return finalResults.slice(0, 10);
 
 
         }
@@ -213,5 +217,6 @@ function solve() {
 
     return Course;
 }
+
 
 module.exports = solve;
