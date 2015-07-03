@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Minesweeper
 {
-    public class Minite
+    public class MineSweeper
     {
        static void Main(string[] arguments)
         {
