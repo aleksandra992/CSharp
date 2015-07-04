@@ -172,11 +172,11 @@ function solve() {
 
             }
             for (var j = 0; j < this.students.length; j += 1) {
-                var studentIDD = this.students[j].id;
+
                 if (!results.some(function (item) {
 
-                        return studentIDD === item.StudentID;
-                    })) {
+                        return this.students[j].id=== item.StudentID;
+                    },this)) {
                     this.examResults.push({StudentID: this.students[j].id, score: 0});
                 }
             }
@@ -217,6 +217,10 @@ function solve() {
 
     return Course;
 }
+var course=Object.create(solve()).init('OOp',['first']);
+console.log(course);
+course.addStudent('Aleksandra Stojcheva');
 
-
+course.pushExamResults([{StudentID:1,score:54}]);
+console.log(course);
 module.exports = solve;
