@@ -1,8 +1,8 @@
-﻿namespace Math
+﻿namespace PrintArrayStatistics
 {
     using System;
 
-    public class Math
+    public class Array
     {
         /// <summary>
         /// Method for max element in array
@@ -32,7 +32,7 @@
         /// <returns>Return the min element in the array</returns>
         public static double GetMinElement(double[] numbers)
         {
-            double minElement = 0;
+            double minElement = int.MaxValue;
             for (int i = 0; i < numbers.Length; i++)
             {
                 double number = numbers[i];
