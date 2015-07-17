@@ -12,7 +12,7 @@
         public static double GetMaxElement(double[] numbers)
         {
 
-            double maxElement = int.MinValue;
+            double maxElement = double.MinValue;
             for (int i = 0; i < numbers.Length; i++)
             {
                 double number = numbers[i];
@@ -32,7 +32,7 @@
         /// <returns>Return the min element in the array</returns>
         public static double GetMinElement(double[] numbers)
         {
-            double minElement = int.MaxValue;
+            double minElement = double.MaxValue;
             for (int i = 0; i < numbers.Length; i++)
             {
                 double number = numbers[i];
