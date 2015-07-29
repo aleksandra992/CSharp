@@ -1,51 +1,56 @@
 function solve() {
     return function (selector) {
-        if (typeof(selector) !== 'string' || $(selector).size() === 0) {
-            throw 'invalid selector';
+        var $domElement,
+            i,
+            len
+
+        if (selector === undefined) {
+            throw Error();
         }
 
-        var buttons = $('.button'),
-            content = $('.content'),
-            i, len;
+        if (typeof selector !== 'string') {
+            throw Error();
+        }
 
-        for(i = 0, len = buttons.length; i < len; i+=1){
-            $(buttons[i]).text('hide');
-            $(buttons[i]).on('click', function(){
-                var clickedButton = $(this),
-                    nextSibling = clickedButton.next(),
-                    firstContent,
-                    validFirstContent = false;
+        var $domElement = $(selector);
+       // console.log($domElement);
+        if ($domElement.size()===0) {
+            throw Error();
+        }
 
-                while(nextSibling){
-                    if(nextSibling.hasClass('content')){
-                        firstContent = nextSibling;
-                        nextSibling = nextSibling.next();
-                        while(nextSibling){
-                            if(nextSibling.hasClass('button')){
-                                validFirstContent = true;
-                                break;
-                            }
-                            nextSibling = nextSibling.next();
-                        }
+        var $buttons = $domElement.find(".button");
+
+        for (i = 0, len = $buttons.length; i < len; i += 1) {
+            var $button = $($buttons[i]);
+            $button.html("hide");
+
+            $button.on("click", function () {
+
+                var $next = $(this).next();
+
+                while (!$next.hasClass('button')) {
+                    if ($next.hasClass('content')) {
                         break;
-                    } else {
-                        nextSibling = nextSibling.next();
                     }
+                    $next = $next.next();
+
                 }
 
-                if (validFirstContent) {
-                    if (firstContent.css('display') === 'none') {
-                        clickedButton.text('hide');
-                        firstContent.css('display', '');
-                    } else {
-                        clickedButton.text('show');
-                        firstContent.hide();
-                    }
+                if ($next.hasClass('content') && $next.css('display') == '') {
+                    // console.log('tukaaaaa');
+                    $(this).html('show');
+                    $next.css('display', 'none');
+                }
+                else if ($next.hasClass('content') && $next.css('display') == 'none') {
+                    //  console.log('none');
+                    $(this).html('hide');
+                    $next.css('display', '');
                 }
 
             });
+
         }
+
     };
 }
-
-module.exports = solve;
+module.exports=solve;
