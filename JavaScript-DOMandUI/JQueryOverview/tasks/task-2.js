@@ -19,38 +19,46 @@ function solve() {
         }
 
         var $buttons = $domElement.find(".button");
+        $buttons.html("hide");
 
-        for (i = 0, len = $buttons.length; i < len; i += 1) {
-            var $button = $($buttons[i]);
-            $button.html("hide");
-        }
+        var $lastButton = $('.button').last();
 
-        $domElement.on("click", '.button', function () {
 
-            var $next = $(this).next();
-
-            while (!$next.hasClass('button')) {
-                //console.log($next.hasClass('button'));
-                if ($next.hasClass('content')) {
-
-                    break;
+        $domElement.on("click", '.button', function (ev) {
+                var $next = $(this).next();
+                var $contentElement;
+                var firstContentFound = false;
+                while ($next.size() !== 0) {
+                    if ($next.hasClass('button')) {
+                        break;
+                    }
+                    if ($next.hasClass('content')) {
+                        $contentElement = $next;
+                        break;
+                    }
+                    $next = $next.next();
                 }
-                $next = $next.next();
-            }
+                if (!$(this).is($lastButton)) {
 
-            if ($next.hasClass('content') && $next.css('display') == '') {
-                $(this).html('show');
-                $next.css('display', 'none');
-            }
-            else if ($next.hasClass('content') && $next.css('display') == 'none') {
-                //console.log('none');
-                $(this).html('hide');
-                $next.css('display', '');
-            }
+                    if ($contentElement !== undefined) {
+                        if ($contentElement.css('display') === 'none') {
+                            $(this).html('hide');
+                            $contentElement.css('display', '');
 
-        });
+                        }
+                        else {
+                            console.log($contentElement.css('display'));
+                            $(this).html('show');
+                            $contentElement.css('display', 'none');
+                        }
+                    }
+                }
+
+            }
+        )
+        ;
 
 
     };
 }
-module.exports=solve;
+module.exports = solve;
