@@ -13,8 +13,8 @@ function solve() {
         }
 
         var $domElement = $(selector);
-       // console.log($domElement);
-        if ($domElement.size()===0) {
+        // console.log($domElement);
+        if ($domElement.size() === 0) {
             throw Error();
         }
 
@@ -23,33 +23,33 @@ function solve() {
         for (i = 0, len = $buttons.length; i < len; i += 1) {
             var $button = $($buttons[i]);
             $button.html("hide");
-
-            $button.on("click", function () {
-
-                var $next = $(this).next();
-
-                while (!$next.hasClass('button')) {
-                    if ($next.hasClass('content')) {
-                        break;
-                    }
-                    $next = $next.next();
-
-                }
-
-                if ($next.hasClass('content') && $next.css('display') == '') {
-                    // console.log('tukaaaaa');
-                    $(this).html('show');
-                    $next.css('display', 'none');
-                }
-                else if ($next.hasClass('content') && $next.css('display') == 'none') {
-                    //  console.log('none');
-                    $(this).html('hide');
-                    $next.css('display', '');
-                }
-
-            });
-
         }
+
+        $domElement.on("click", '.button', function () {
+
+            var $next = $(this).next();
+
+            while (!$next.hasClass('button')) {
+                //console.log($next.hasClass('button'));
+                if ($next.hasClass('content')) {
+
+                    break;
+                }
+                $next = $next.next();
+            }
+
+            if ($next.hasClass('content') && $next.css('display') == '') {
+                $(this).html('show');
+                $next.css('display', 'none');
+            }
+            else if ($next.hasClass('content') && $next.css('display') == 'none') {
+                //console.log('none');
+                $(this).html('hide');
+                $next.css('display', '');
+            }
+
+        });
+
 
     };
 }
