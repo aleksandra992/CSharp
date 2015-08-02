@@ -35,37 +35,41 @@ function solve() {
         for (var i = 0, len = allWithClassButton.length; i < len; i += 1) {
             var buttonElement = allWithClassButton[i];
             buttonElement.innerHTML = "hide";
-
-            buttonElement.addEventListener('click', function () {
-                var contentElement;
-                var next = this.nextElementSibling;
-
-                while (next.className !== 'button') {
-                    if (next.className === 'content') {
-                        break;
-                    }
-                    next = next.nextElementSibling;
-
-                }
-                console.log(next.className);    
-                if (next.className === 'content' && next.style.display == '') {
-                    // console.log('tukaaaaa');
-                    this.innerHTML = 'show';
-                    next.style.display = "none";
-                }
-                else if (next.className === 'content' && next.style.display == 'none') {
-                    //  console.log('none');
-                    this.innerHTML = "hide";
-                    next.style.display = '';
-                }
-
-            }, false);
-
-
-            var allWithClassContent = domElement.querySelectorAll('.content');
-
-
         }
+        var lastButton = allWithClassButton[allWithClassButton.length - 1];
+        domElement.addEventListener('click', function (ev) {
+
+            var contentElement;
+            var next = ev.target.nextElementSibling;
+
+            while (next) {
+
+                if (next.className === 'content') {
+                    break;
+                }
+                if (next.className === 'button') {
+                    break;
+                }
+                next = next.nextElementSibling;
+
+            }
+
+            if (!Object.is(lastButton, ev.target)) {
+
+                if (next.className === 'content') {
+                    if (next.style.display == 'none') {
+                        // console.log('tukaaaaa');
+                        ev.target.innerHTML = 'hide';
+                        next.style.display = '';
+                    }
+                    else {
+                        ev.target.innerHTML = "show";
+                        next.style.display = 'none';
+                    }
+                }
+            }
+
+        }, false);
 
     };
 }
