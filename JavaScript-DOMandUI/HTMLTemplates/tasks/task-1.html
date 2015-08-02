@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="table"></div>
+<script type="text/handlebars" id="template"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="task-1.js"></script>
+<script>
+    var func=solve();
+    func('#template');
+</script>
+<script src="handlebars/handlebars-v3.0.3.js"></script>
+
+
+<script>
+    data = {
+        headers : ['Vendor', 'Model', 'OS'],
+        items : [{
+            col1: 'Nokia',
+            col2: 'Lumia 920',
+            col3: 'Windows Phone'
+        }, {
+            col1: 'LG',
+            col2: 'Nexus 5',
+            col3: 'Android'
+        }, {
+            col1: 'Apple',
+            col2: 'iPhone 6',
+            col3: 'iOS'
+        }]
+    };
+    var tableTemplate=Handlebars.compile(document.getElementById('template').innerHTML);
+    document.getElementById('table').innerHTML = tableTemplate(data);
+
+</script>
+
+</body>
+</html>

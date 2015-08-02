@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="container"></div>
+<script type="text/handlebars" id="template"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="task-2.js"></script>
+<script>
+    var func=solve();
+    func('#template');
+</script>
+<script src="handlebars/handlebars-v3.0.3.js"></script>
+<script>
+    var data = {
+        animals: [{
+            name: 'Lion',
+            url: 'https://susanmcmovies.files.wordpress.com/2014/12/the-lion-king-wallpaper-the-lion-king-2-simbas-pride-4685023-1024-768.jpg'
+        }, {
+            name: 'Turtle',
+            url: 'http://www.enkivillage.com/s/upload/images/a231e4349b9e3f28c740d802d4565eaf.jpg'
+        }, {
+            name: 'Dog'
+        }, {
+            name: 'Cat',
+            url: 'http://i.imgur.com/Ruuef.jpg'
+        }, {
+            name: 'Dog Again'
+        }]
+    }
+    var animalTemplate=Handlebars.compile(document.getElementById('template').innerHTML);
+    console.log(animalTemplate(data));
+    document.getElementsByClassName('container')[0].innerHTML = animalTemplate(data);
+
+</script>
+</body>
+</html>
