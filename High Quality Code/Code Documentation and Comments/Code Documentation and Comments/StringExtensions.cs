@@ -7,6 +7,7 @@
     using System.Security.Cryptography;
     using System.Text;
     using System.Text.RegularExpressions;
+
     /// <summary>
     /// A class for string extensions
     /// </summary>
@@ -38,6 +39,7 @@
             // Return the hexadecimal string.
             return builder.ToString();
         }
+
         /// <summary>
         /// The method return boolean variable depending on the input.
         /// </summary>
@@ -48,6 +50,7 @@
             var stringTrueValues = new[] { "true", "ok", "yes", "1", "да" };
             return stringTrueValues.Contains(input.ToLower());
         }
+
         /// <summary>
         /// The method parse string to short 
         /// </summary>
@@ -59,6 +62,7 @@
             short.TryParse(input, out shortValue);
             return shortValue;
         }
+
         /// <summary>
         /// Method for parsing string to integer
         /// </summary>
@@ -70,17 +74,19 @@
             int.TryParse(input, out integerValue);
             return integerValue;
         }
+
         /// <summary>
         /// Method for parsing string to long
         /// </summary>
         /// <param name="input">The string to be parsed</param>
-        /// <returns></returns>
+        /// <returns>Returns the parsed string</returns>
         public static long ToLong(this string input)
         {
             long longValue;
             long.TryParse(input, out longValue);
             return longValue;
         }
+
         /// <summary>
         /// The method tries to parse string to DateTime Object
         /// </summary>
@@ -92,6 +98,7 @@
             DateTime.TryParse(input, out dateTimeValue);
             return dateTimeValue;
         }
+
         /// <summary>
         /// Method that provides capitalizing of the first letter of string
         /// </summary>
@@ -106,6 +113,7 @@
 
             return input.Substring(0, 1).ToUpper(CultureInfo.CurrentCulture) + input.Substring(1, input.Length - 1);
         }
+
         /// <summary>
         /// The method gets Substring between two given strings 
         /// </summary>
@@ -137,6 +145,7 @@
 
             return input.Substring(startPosition, endPosition - startPosition);
         }
+
         /// <summary>
         /// Method for converting bulgarian letters into latin letters
         /// </summary>
@@ -163,6 +172,7 @@
 
             return input;
         }
+
         /// <summary>
         /// Method for converting the latin letter into bulgarian letters as they are on the keyboard
         /// </summary>
@@ -191,6 +201,7 @@
 
             return input;
         }
+
         /// <summary>
         /// Method for converting string to valid username containg only latin letters, 
         /// numbers, empty space and the symbols underscore and period
@@ -202,6 +213,7 @@
             input = input.ConvertCyrillicToLatinLetters();
             return Regex.Replace(input, @"[^a-zA-z0-9_\.]+", string.Empty);
         }
+
         /// <summary>
         /// Method for converting string to valid latin file name containing only latin letters,
         /// numbers, empty space and the symbols underscore, period and dash
@@ -214,6 +226,7 @@
             input = input.Replace(" ", "-").ConvertCyrillicToLatinLetters();
             return Regex.Replace(input, @"[^a-zA-z0-9_\.\-]+", string.Empty);
         }
+
         /// <summary>
         /// Method that gets a substring from the begging of the string with specified length
         /// </summary>
@@ -224,6 +237,7 @@
         {
             return input.Substring(0, Math.Min(input.Length, charsCount));
         }
+
         /// <summary>
         /// The method get the file extension from a file name.
         /// </summary>
@@ -244,6 +258,7 @@
 
             return fileParts.Last().Trim().ToLower();
         }
+
         /// <summary>
         /// Method for getting the content type of a file extension
         /// </summary>
@@ -272,6 +287,7 @@
 
             return "application/octet-stream";
         }
+
         /// <summary>
         /// Method for converting input string to byte array
         /// </summary>
