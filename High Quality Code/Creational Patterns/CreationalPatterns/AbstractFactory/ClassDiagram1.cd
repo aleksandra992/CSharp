@@ -1,2 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AbstractFactory.Computers.Computer" Collapsed="true">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Computers\Computer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractFactory.Computers.HP" Collapsed="true">
+    <Position X="4" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Computers\HP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractFactory.Computers.Toshiba" Collapsed="true">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Computers\Toshiba.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractFactory.Factories.Amazon" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Factories\Amazon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractFactory.Factories.BestBuy" Collapsed="true">
+    <Position X="9.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Factories\BestBuy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractFactory.Factories.Seller" Collapsed="true">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\Seller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractFactory.MainProgram" Collapsed="true">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>MainProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractFactory.OnlineMagazine" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAAAAACAA=</HashCode>
+      <FileName>OnlineMagazine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Computer" />
+      <Property Name="Seller" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

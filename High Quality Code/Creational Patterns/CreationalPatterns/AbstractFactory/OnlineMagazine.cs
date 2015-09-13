@@ -8,7 +8,7 @@ using AbstractFactory.Factories;
 
 namespace AbstractFactory
 {
-    public class OnlineMagazine : AbstractFactory.Factories.Seller
+    public class OnlineMagazine
     {
         private readonly Seller seller;
 
@@ -18,6 +18,17 @@ namespace AbstractFactory
         }
 
         public AbstractFactory.Computers.Computer Computer
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public AbstractFactory.Factories.Seller Seller
         {
             get
             {
