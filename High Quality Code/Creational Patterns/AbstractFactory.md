@@ -10,9 +10,8 @@ This mechanism makes exchanging product families easy because the specific class
 Because the service provided by the factory object is so pervasive, it is routinely implemented as a Singleton
 ##Class diagram##
 
-![](AbstractFactory.png)
+![](abstractFactory.png)
 
- 
 ###### Abstract Factory
 ~~~c#
 
