@@ -15,20 +15,6 @@ Singleton e pattern който ни позволява един клас да и
 
 ![](singleton-img.gif)
 
-Implementing Singleton in C#
-
-Retired Content
-This content is outdated and is no longer being maintained. It is provided as a courtesy for individuals who are still using these technologies. This page may contain URLs that were valid when originally published, but now link to sites or pages that no longer exist. Please see the patterns & practices guidance for the most current information.
-Ff650316.ImpSingletonInCsharp(en-us,PandP.10).png
-Version 1.0.1
-GotDotNet community for collaboration on this pattern
-Complete List of patterns & practices
-Context
-You are building an application in C#. You need a class that has only one instance, and you need to provide a global point of access to the instance. You want to be sure that your solution is efficient and that it takes advantage of the Microsoft .NET common language runtime features. You may also want to make sure that your solution is thread safe.
-Implementation Strategy
-Even though Singleton is a comparatively simple pattern, there are various tradeoffs and options, depending upon the implementation. The following is a series of implementation strategies with a discussion of their strengths and weaknesses.
-Singleton
-The following implementation of the Singleton design pattern follows the solution presented in Design Patterns: Elements of Reusable Object-Oriented Software [Gamma95] but modifies it to take advantage of language features available in C#, such as properties:
  
 ###### Singleton implementation
 ~~~c#
@@ -82,4 +68,94 @@ public sealed class Singleton
       }
    }
 }
+~~~
+
+####Simple Implementation
+~~~c#
+using System;
+namespace Singleton
+{
+    public class HighScore
+    {
+        private static HighScore highScoreInstance;
+        private int score;
+        private string name;
+
+        private HighScore()
+        {
+        }
+
+        public static HighScore Instance
+        {
+            get
+            {
+                if (highScoreInstance == null)
+                {
+                    highScoreInstance = new HighScore();
+                }
+                return highScoreInstance;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                this.name = value;
+            }
+        }
+
+        public int Score
+        {
+            get
+            {
+                return this.score;
+            }
+            set
+            {
+                this.score = value;
+            }
+        }
+
+        public void SaveHighScore(string name, int score)
+        {
+            this.score = score;
+            this.name = name;
+
+        }
+
+        public override string ToString()
+        {
+            return String.Format("The high score is {0} and it from {1}", this.name, this.score);
+        }
+    }
+}
+
+###Usage
+
+
+using System;
+
+namespace Singleton
+{
+    public class StartPoint
+    {
+        static void Main(string[] args)
+        {
+            var firstHighScore = HighScore.Instance;
+            firstHighScore.SaveHighScore("Aleksandra", 95);
+            var secondHighScore = HighScore.Instance;
+            Console.WriteLine(firstHighScore);
+            Console.WriteLine(secondHighScore);
+            secondHighScore.SaveHighScore("Goran", 96);
+            Console.WriteLine(firstHighScore);
+            Console.WriteLine(secondHighScore);
+        }
+    }
+}
+
 ~~~
