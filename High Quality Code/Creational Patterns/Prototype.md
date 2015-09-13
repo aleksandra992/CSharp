@@ -2,7 +2,7 @@
 Prototype Design Pattern is a pattern we use to receive an object instance for a particular class, such as builder and factory pattern. Instead of having a new fresh object every time, we can make a copy of an existed object instantly (object we can use as Prototype) and start using it. In that way, we do not have to repeat the building process for the object we are trying to use. The new copy object is totally independent with the original prototype object, and can be used for any purpose that will not affect the original. There is no limit for copying the existing objects, any existing object can be copied. 
 ##Class Diagram:##
 
-![](Prototype.jpg)
+![](Prototype.JPG)
 
  
 ###### Prototype implementation
