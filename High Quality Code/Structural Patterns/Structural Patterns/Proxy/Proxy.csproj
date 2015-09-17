@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9109555F-EAB4-4236-990D-C3A3CE5954D0}</ProjectGuid>
+    <ProjectGuid>{03EE74CD-AD52-4901-BD39-0A84B6C6ACA8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Adapter</RootNamespace>
-    <AssemblyName>Adapter</AssemblyName>
+    <RootNamespace>Proxy</RootNamespace>
+    <AssemblyName>Proxy</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISubject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy.cs" />
+    <Compile Include="RealSubject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

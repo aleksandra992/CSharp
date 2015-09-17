@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Decorator
+﻿namespace Decorator
 {
-    public class BlueShapeDecorator:ShapeDecorator
+    using System;
+    public class BlueShapeDecorator : ShapeDecorator
     {
-        public BlueShapeDecorator(Shape shape):base(shape)
+        public BlueShapeDecorator(Shape shape)
+            : base(shape)
         {
-            
+
         }
 
         public override void Draw()
@@ -22,7 +18,7 @@ namespace Decorator
         private void SetBorder(Shape shape)
         {
             Console.WriteLine("Border color:Blue");
-            
+
         }
     }
 }
