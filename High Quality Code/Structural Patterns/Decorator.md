@@ -1,33 +1,33 @@
-## Facade ##
+## Decorator ##
 
-Facade pattern hides the complexities of the system and provides an interface to the client using which the client can access the system. This type of design pattern comes under structural pattern as this pattern adds an interface to existing system to hide its complexities.
+Decorator pattern allows a user to add new functionality to an existing object without altering its structure. This type of design pattern comes under structural pattern as this pattern acts as a wrapper to existing class.
 
-This pattern involves a single class which provides simplified methods required by client and delegates calls to methods of existing system classes.
+This pattern creates a decorator class which wraps the original class and provides additional functionality keeping class methods signature intact.
 
 ##Class diagram##
 
-![](facade.gif)
+![](decorator.gif)
 
 ~~~c#
-namespace Facade
+namespace Decorator
 {
-    interface IShape
-    {
-        void Draw();
-    }
+   public abstract class Shape
+   {
+       public abstract void Draw();
+   }
 }
-~~~
 
+
+~~~
 ~~~c#
-namespace Facade
+namespace Decorator
 {
     using System;
-    public class Circle:IShape
+    public class Circle : Shape
     {
-        public void Draw()
+        public override void Draw()
         {
             Console.WriteLine("Shape:Circle");
-
         }
     }
 }
@@ -35,12 +35,13 @@ namespace Facade
 ~~~
 
 ~~~c#
-namespace Facade
+namespace Decorator
 {
     using System;
-    public class Rectangle:IShape
+
+    public class Rectangle:Shape
     {
-        public void Draw()
+        public override void Draw()
         {
             Console.WriteLine("Shape:Rectangle");
         }
@@ -50,48 +51,84 @@ namespace Facade
 ~~~
 
 ~~~c#
-namespace Facade
+namespace Decorator
 {
-    public class ShapeMakerFacade
+    public abstract class ShapeDecorator : Shape
     {
-        private readonly IShape circle;
-        private readonly IShape rectangle;
-
-        public ShapeMakerFacade()
+        protected ShapeDecorator(Shape shape)
         {
-            circle=new Circle();
-            rectangle=new Rectangle();
+            this.Shape = shape;
         }
 
-        public void DrawCircle()
+        protected Shape Shape { get; set; }
+
+        public override void Draw()
         {
-            circle.Draw();
+            this.Shape.Draw();
+        }
+    }
+}
+
+
+~~~
+
+~~~c#
+namespace Decorator
+{
+    using System;
+    public class BlueShapeDecorator : ShapeDecorator
+    {
+        public BlueShapeDecorator(Shape shape)
+            : base(shape)
+        {
+
         }
 
-        public void DrawRectangle()
+        public override void Draw()
         {
-            rectangle.Draw();
+            this.Shape.Draw();
+            SetBorder(this.Shape);
+        }
+
+        private void SetBorder(Shape shape)
+        {
+            Console.WriteLine("Border color:Blue");
+
         }
     }
 }
 
 ~~~
-
 Usage
 ~~~c#
-namespace Facade
+namespace Decorator
 {
     using System;
+
     class Program
     {
         static void Main(string[] args)
         {
-            ShapeMakerFacade facade=new ShapeMakerFacade();
-            Console.WriteLine("Circle");
-            facade.DrawCircle();
-            Console.WriteLine("---------------  ");
-            Console.WriteLine("Rectangle");
-            facade.DrawRectangle();
+            Shape circe=new Circle();
+
+            Shape blueCircle= new BlueShapeDecorator(new Circle());
+
+            Shape blueRectangle=new BlueShapeDecorator(new Rectangle());
+
+            Console.WriteLine("----------------------");
+            Console.WriteLine("Normal circle");
+            circe.Draw();
+            Console.WriteLine("----------------------");
+
+            Console.WriteLine("Circle with blue border");
+            blueCircle.Draw();
+            Console.WriteLine("----------------------");
+
+            Console.WriteLine("Rectangle with blue border");
+            blueRectangle.Draw();
+            Console.WriteLine("----------------------");
+
+
 
         }
     }
