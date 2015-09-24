@@ -7,7 +7,7 @@ Double dispatch
 
 ##Class diagram##
 
-![](visitor.png)
+![](Visitor.png)
 
 ~~~c#
 namespace VisitorPattern
