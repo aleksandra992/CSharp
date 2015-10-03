@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<students xmlns:students="urn:xml-basic-homework">
+  <student>
+    <name>Pesho</name>
+    <sex>Male</sex>
+    <birth-date>2000-10-05</birth-date>
+    <phone>0035898541365</phone>
+    <email>pesho@gmail.com</email>
+    <course>HQC</course>
+    <speciality>Software Engeenering</speciality>
+    <faculty-number>123456789</faculty-number>
+    <exams>
+      <exam>
+        <name>C#1</name>
+        <tutor>NIki</tutor>
+        <score>89</score>
+      </exam>
+      <exam>
+        <name>C#2</name>
+        <tutor>NIki</tutor>
+        <score>80</score>
+      </exam>
+      <exam>
+        <name>OOP</name>
+        <tutor>NIki</tutor>
+        <score>96</score>
+      </exam>
+    </exams>
+    <enrollment xmlns:enrollment="urn:xml-basic-enrollment">
+      <date>2015-05-05</date>
+      <score>40</score>
+    </enrollment>
+    <teacher-endorsments>
+      <teacher-endorsment>
+        <teacher-name>Ivo</teacher-name>
+        <endorsment>Neshto</endorsment>
+      </teacher-endorsment>
+    </teacher-endorsments>
+  </student>
+  <student>
+
+    <name>Gosho</name>
+    <sex>Male</sex>
+    <birth-date>2000-03-29</birth-date>
+    <phone>0035898556476</phone>
+    <email>pesho@gmail.com</email>
+    <course>DB</course>
+    <speciality>Software Engeenering</speciality>
+    <faculty-number>123445789</faculty-number>
+    <exams>
+      <exam>
+        <name>C#1</name>
+        <tutor>NIki</tutor>
+        <score>89</score>
+      </exam>
+      <exam>
+        <name>C#2</name>
+        <tutor>NIki</tutor>
+        <score>80</score>
+      </exam>
+      <exam>
+        <name>OOP</name>
+        <tutor>NIki</tutor>
+        <score>96</score>
+      </exam>
+    </exams>
+    <enrollment xmlns:enrollment="urn:xml-basic-enrollment">
+      <date>2015-05-05</date>
+      <score>40</score>
+    </enrollment>
+    <teacher-endorsments>
+      <teacher-endorsment>
+        <teacher-name>Evlogi</teacher-name>
+        <endorsment>Neshto</endorsment>
+      </teacher-endorsment>
+    </teacher-endorsments>
+  </student>
+  <student>
+    <name>Mariq</name>
+    <sex>female</sex>
+    <birth-date>1996-11-05</birth-date>
+    <phone>0035898556986</phone>
+    <email>pesho@gmail.com</email>
+    <course>DB</course>
+    <speciality>Software Engeenering</speciality>
+    <faculty-number>123445679</faculty-number>
+    <exams>
+      <exam>
+        <name>C#1</name>
+        <tutor>NIki</tutor>
+        <score>55</score>
+      </exam>
+      <exam>
+        <name>C#2</name>
+        <tutor>NIki</tutor>
+        <score>67</score>
+      </exam>
+      <exam>
+        <name>OOP</name>
+        <tutor>NIki</tutor>
+        <score>77</score>
+      </exam>
+    </exams>
+    <enrollment xmlns:enrollment="urn:xml-basic-enrollment">
+      <date>2015-05-05</date>
+      <score>40</score>
+    </enrollment>
+    <teacher-endorsments>
+      <teacher-endorsment>
+        <teacher-name>Niki</teacher-name>
+        <endorsment>Neshto</endorsment>
+      </teacher-endorsment>
+    </teacher-endorsments>
+  </student>
+</students>
