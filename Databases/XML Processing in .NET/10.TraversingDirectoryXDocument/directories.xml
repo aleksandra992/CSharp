@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directories>
+  <dir path="E:\Git hub\Telerik Academy\Databases">
+    <dir path="E:\Git hub\Telerik Academy\Databases\Test">
+      <dir path="E:\Git hub\Telerik Academy\Databases\Test\Test">
+        <dir path="E:\Git hub\Telerik Academy\Databases\Test\Test\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\Test\Test\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\Test\Test\bin\Debug\Test.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\Test\Test\bin\Debug\Test.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\Test\Test\bin\Debug\Test.vshost.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\Test\Test\bin\Debug\Test.vshost.exe.manifest</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\Test\Test\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\Test\Test\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\Test\Test\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\Test\Test\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\Test\Test\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\Test\Test\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\Test\Test\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\Test\Test\obj\Debug\Test.csproj.FileListAbsolute.txt</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\Test\Test\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\Test\Test\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\Test\Test\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\Test\Test\Program.cs</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\Test\Test\Test.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\Test\Test\XMLFile1.xml</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\Test\Test\XMLSchema1.xsd</name>
+        </file>
+      </dir>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\Test\Test.sln</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\Test\Test.v12.suo</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\Test\XMLSchema1.xsd</name>
+      </file>
+    </dir>
+    <dir path="E:\Git hub\Telerik Academy\Databases\XML Basics">
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Basics\.xsl</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Basics\students.xml</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Basics\students.xsd</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Basics\students.xsl</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Basics\XML Basics.sln</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Basics\XML Basics.v12.suo</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Basics\XML Basics.zip</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Basics\XML.md</name>
+      </file>
+    </dir>
+    <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET">
+      <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument">
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\bin\Debug\TraversingDirectoryXDocument.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\bin\Debug\TraversingDirectoryXDocument.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\bin\Debug\TraversingDirectoryXDocument.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\bin\Debug\TraversingDirectoryXDocument.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\bin\Debug\TraversingDirectoryXDocument.vshost.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\bin\Debug\TraversingDirectoryXDocument.vshost.exe.manifest</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug\10.TraversingDirectoryXDocument.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug\10.TraversingDirectoryXDocument.csprojResolveAssemblyReference.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug\TraversingDirectoryXDocument.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\obj\Debug\TraversingDirectoryXDocument.pdb</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\10.TraversingDirectoryXDocument.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\10.TraversingDirectoryXDocument.csproj.user</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\directories.xml</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\10.TraversingDirectoryXDocument\Program.cs</name>
+        </file>
+      </dir>
+      <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser">
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\bin\Debug\AllArtistsDOMParser.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\bin\Debug\AllArtistsDOMParser.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\bin\Debug\AllArtistsDOMParser.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\bin\Debug\AllArtistsDOMParser.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\bin\Debug\AllArtistsDOMParser.vshost.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\bin\Debug\AllArtistsDOMParser.vshost.exe.manifest</name>
+            </file>
+          </dir>
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\bin\Release" />
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\2.AllArtistsDOMParser.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\AllArtistsDOMParser.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\AllArtistsDOMParser.csprojResolveAssemblyReference.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\AllArtistsDOMParser.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\AllArtistsDOMParser.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\2.AllArtistsDOMParser.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\AllArtistsDOMParser.csproj.user</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\2.AllArtistsDOMParser\Program.cs</name>
+        </file>
+      </dir>
+      <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath">
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\bin\Debug\AllArtistsXPath.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\bin\Debug\AllArtistsXPath.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\bin\Debug\AllArtistsXPath.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\bin\Debug\AllArtistsXPath.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\bin\Debug\AllArtistsXPath.vshost.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\bin\Debug\AllArtistsXPath.vshost.exe.manifest</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug\3.AllArtistsXPath.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug\AllArtistsXPath.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug\AllArtistsXPath.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug\AllArtistsXPath.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\3.AllArtistsXPath.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\AllArtistsXPath.csproj.user</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\3.AllArtistsXPath\Program.cs</name>
+        </file>
+      </dir>
+      <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20">
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\bin\Debug\DeleteAlbumsWithPriceBiggerThan20.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\bin\Debug\DeleteAlbumsWithPriceBiggerThan20.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\bin\Debug\DeleteAlbumsWithPriceBiggerThan20.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\bin\Debug\DeleteAlbumsWithPriceBiggerThan20.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\bin\Debug\DeleteAlbumsWithPriceBiggerThan20.vshost.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\bin\Debug\DeleteAlbumsWithPriceBiggerThan20.vshost.exe.manifest</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug\4.DeleteAlbumsWithPriceBiggerThan20.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug\DeleteAlbumsWithPriceBiggerThan20.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug\DeleteAlbumsWithPriceBiggerThan20.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug\DeleteAlbumsWithPriceBiggerThan20.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\4.DeleteAlbumsWithPriceBiggerThan20.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\DeleteAlbumsWithPriceBiggerThan20.csproj.user</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\newCatalogue.xml</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\4.DeleteAlbumsWithPriceBiggerThan20\Program.cs</name>
+        </file>
+      </dir>
+      <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader">
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\bin\Debug\AllSongsTitle.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\bin\Debug\AllSongsTitle.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\bin\Debug\AllSongsTitle.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\bin\Debug\AllSongsTitle.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\bin\Debug\AllSongsTitle.vshost.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\bin\Debug\AllSongsTitle.vshost.exe.manifest</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug\5.AllSongsTitleReader.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug\AllSongsTitle.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug\AllSongsTitle.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug\AllSongsTitle.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\5.AllSongsTitleReader.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\AllSongsTitleReader.csproj.user</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\5.AllSongsTitleReader\Program.cs</name>
+        </file>
+      </dir>
+      <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ">
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\bin\Debug\AllSongsTitleLINQ.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\bin\Debug\AllSongsTitleLINQ.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\bin\Debug\AllSongsTitleLINQ.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\bin\Debug\AllSongsTitleLINQ.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\bin\Debug\AllSongsTitleLINQ.vshost.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\bin\Debug\AllSongsTitleLINQ.vshost.exe.manifest</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\6.AllSongsTitleLINQ.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\AllSongsTitleLINQ.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\AllSongsTitleLINQ.csprojResolveAssemblyReference.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\AllSongsTitleLINQ.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\AllSongsTitleLINQ.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\6.AllSongsTitleLINQ.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\AllSongsTitleLINQ.csproj.user</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\6.AllSongsTitleLINQ\Program.cs</name>
+        </file>
+      </dir>
+      <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML">
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\bin\Debug\TxtToXML.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\bin\Debug\TxtToXML.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\bin\Debug\TxtToXML.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\bin\Debug\TxtToXML.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\bin\Debug\TxtToXML.vshost.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\bin\Debug\TxtToXML.vshost.exe.manifest</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug\7.TxtToXML.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug\TxtToXML.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug\TxtToXML.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\obj\Debug\TxtToXML.pdb</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\7.TxtToXML.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\7.TxtToXML.csproj.user</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\newCatalogue.xml</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\Person.cs</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\Person.txt</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\Program.cs</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\7.TxtToXML\TxtToXML.csproj.user</name>
+        </file>
+      </dir>
+      <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue">
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\bin\Debug\8.AlbumInfoFromCatalogue.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\bin\Debug\8.AlbumInfoFromCatalogue.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\bin\Debug\8.AlbumInfoFromCatalogue.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\bin\Debug\8.AlbumInfoFromCatalogue.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\bin\Debug\8.AlbumInfoFromCatalogue.vshost.exe.config</name>
+            </file>
+          </dir>
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\bin\Release" />
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug\8.AlbumInfoFromCatalogue.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug\8.AlbumInfoFromCatalogue.csprojResolveAssemblyReference.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug\8.AlbumInfoFromCatalogue.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug\8.AlbumInfoFromCatalogue.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\8.AlbumInfoFromCatalogue.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\8.AlbumInfoFromCatalogue.csproj.user</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\albums.xml</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\8.AlbumInfoFromCatalogue\Program.cs</name>
+        </file>
+      </dir>
+      <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory">
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\bin">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\bin\Debug">
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\bin\Debug\TraversingDirectory.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\bin\Debug\TraversingDirectory.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\bin\Debug\TraversingDirectory.pdb</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\bin\Debug\TraversingDirectory.vshost.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\bin\Debug\TraversingDirectory.vshost.exe.config</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\bin\Debug\TraversingDirectory.vshost.exe.manifest</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj">
+          <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug">
+            <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug\TempPE" />
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug\9.TraversingDirectory.csproj.FileListAbsolute.txt</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug\9.TraversingDirectory.csprojResolveAssemblyReference.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug\TraversingDirectory.exe</name>
+            </file>
+            <file>
+              <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\obj\Debug\TraversingDirectory.pdb</name>
+            </file>
+          </dir>
+        </dir>
+        <dir path="E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\Properties">
+          <file>
+            <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\Properties\AssemblyInfo.cs</name>
+          </file>
+        </dir>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\9.TraversingDirectory.csproj</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\9.TraversingDirectory.csproj.user</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\App.config</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\directories.xml</name>
+        </file>
+        <file>
+          <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\9.TraversingDirectory\Program.cs</name>
+        </file>
+      </dir>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\catalogue.xml</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\XML Processing in .NET.sln</name>
+      </file>
+      <file>
+        <name>E:\Git hub\Telerik Academy\Databases\XML Processing in .NET\XML Processing in .NET.v12.suo</name>
+      </file>
+    </dir>
+  </dir>
+</directories>

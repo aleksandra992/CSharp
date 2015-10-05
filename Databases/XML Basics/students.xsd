@@ -4,6 +4,11 @@
            elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+  <xs:simpleType name="facultyNumber">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{10}"/>
+    </xs:restriction>
+  </xs:simpleType>
   <xs:element name="students">
     <xs:complexType>
       <xs:sequence>
@@ -17,7 +22,7 @@
               <xs:element name="email" type="xs:string" />
               <xs:element name="course" type="xs:string" />
               <xs:element name="speciality" type="xs:string" />
-              <xs:element name="faculty-number" type="xs:unsignedInt" />
+              <xs:element name="faculty-number" type="facultyNumber" />
               <xs:element name="exams">
                 <xs:complexType>
                   <xs:sequence>
