@@ -91,7 +91,7 @@
         - Faster lookup for results in certain column or group of columns (using index structures such as B-Trees or Hash Indexes to speed up searching of values). 
         - Instead of scanning the entire table for the results.
 
-    -> Cons: 
+    - Cons: 
         - Slower writes - adding / deleting records in indexed tables is slower.
         - May cause the system to restructure the index of structure (Hash Index, B-Tree, etc), which can be very computationally expensive.
         - Takes up more disk space - stores more data.
