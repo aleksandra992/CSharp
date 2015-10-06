@@ -24,11 +24,11 @@ namespace _8.AlbumInfoFromCatalogue
                             if (reader.Name == "name")
                             {
                                 writer.WriteStartElement("album");
-                                writer.WriteElementString("name", reader.Name);
+                                writer.WriteElementString("name", reader.ReadElementString());
                             }
                             if (reader.Name == "artist")
                             {
-                                writer.WriteElementString("artist",reader.Name);
+                                writer.WriteElementString("artist",reader.ReadElementString());
                                 writer.WriteEndElement();
                             }
 
