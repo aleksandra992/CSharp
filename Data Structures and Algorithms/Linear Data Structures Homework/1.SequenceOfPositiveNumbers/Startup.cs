@@ -17,8 +17,8 @@
 
             Console.WriteLine("The sum of the numbers is:{0}", CalculateSum(positiveNumbers));
             Console.WriteLine("The avergae of the numbers is {0}", CalculateAverage(positiveNumbers));
-
         }
+
         public static int CalculateSum(List<int> numbers)
         {
             var sum = 0;
@@ -26,6 +26,7 @@
             {
                 sum += number;
             }
+
             return sum;
         }
 

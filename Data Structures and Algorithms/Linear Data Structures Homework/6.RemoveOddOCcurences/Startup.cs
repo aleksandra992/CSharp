@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+
     public class Startup
     {
         public static void Main()
@@ -27,11 +28,12 @@
                     occurences[number] = 1;
                 }
             }
+
             var evenOccurencesNumbers = new List<int>();
-            for(var i=0;i<numbers.Count;i++)
+            for (var i = 0; i < numbers.Count; i++)
             {
                 var number = numbers[i];
-                if(occurences[number]%2==0)
+                if (occurences[number] % 2 == 0)
                 {
                     evenOccurencesNumbers.Add(number);
                 }

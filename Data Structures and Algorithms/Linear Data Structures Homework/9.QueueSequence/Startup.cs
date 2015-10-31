@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace QueueSequence
+﻿namespace QueueSequence
 {
+    using System;
+    using System.Collections.Generic;
+
     public class Startup
     {
         public static void Main()
@@ -19,11 +19,10 @@ namespace QueueSequence
                 var current = queue.Dequeue();
                 sequence.Add(current + 1);
                 queue.Enqueue(current + 1);
-                sequence.Add(2 * current + 1);
-                queue.Enqueue(2 * current + 1);
+                sequence.Add((2 * current) + 1);
+                queue.Enqueue((2 * current) + 1);
                 sequence.Add(current + 2);
                 queue.Enqueue(current + 2);
-
             }
 
             Console.WriteLine("The sequence is {0} ", string.Join(" ", sequence));

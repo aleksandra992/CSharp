@@ -2,7 +2,8 @@
 {
     public class QueueItem
     {
+        public int Value { get; set; }
+
         public Position Position { get; set; }
-        public int Value;
     }
 }

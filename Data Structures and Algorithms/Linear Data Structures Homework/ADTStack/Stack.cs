@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ADTStack
+﻿namespace ADTStack
 {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+
     public class Stack<T> : IEnumerable<T>
     {
-        private const int initialSize = 4;
-        private const int deltaSize = 4;
+        private const int InitialSize = 4;
+        private const int DeltaSize = 4;
         private T[] items;
         private int size;
+
         public Stack()
         {
-            items = new T[initialSize];
+            this.items = new T[InitialSize];
             this.Count = 0;
         }
 
@@ -25,7 +23,6 @@ namespace ADTStack
             {
                 return this.items.Length;
             }
-
         }
 
         public int Count
@@ -34,6 +31,7 @@ namespace ADTStack
             {
                 return this.size;
             }
+
             private set
             {
                 this.size = value;
@@ -46,9 +44,9 @@ namespace ADTStack
             {
                 this.items = this.ResizeArray();
             }
-            this.items[Count] = element;
-            this.Count++;
 
+            this.items[this.Count] = element;
+            this.Count++;
         }
 
         public T Pop()
@@ -59,20 +57,9 @@ namespace ADTStack
             }
 
             this.Count--;
-            var item= this.items[this.Count];
+            var item = this.items[this.Count];
             this.items[this.Count] = default(T);
             return item;
-        }
-
-        private T[] ResizeArray()
-        {
-            var newArray = new T[this.Capacity + deltaSize];
-            for (var i = 0; i < this.items.Length; i++)
-            {
-                newArray[i] = this.items[i];
-            }
-
-            return newArray;
         }
 
         public IEnumerator<T> GetEnumerator()
@@ -88,6 +75,17 @@ namespace ADTStack
         IEnumerator IEnumerable.GetEnumerator()
         {
             return this.GetEnumerator();
+        }
+
+        private T[] ResizeArray()
+        {
+            var newArray = new T[this.Capacity + DeltaSize];
+            for (var i = 0; i < this.items.Length; i++)
+            {
+                newArray[i] = this.items[i];
+            }
+
+            return newArray;
         }
     }
 }

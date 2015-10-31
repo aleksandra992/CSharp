@@ -13,10 +13,10 @@
             int n = int.Parse(Console.ReadLine());
             int m = int.Parse(Console.ReadLine());
             Queue<QueueItem> queue = new Queue<QueueItem>();
-            var nItem = new QueueItem();
-            nItem.Value = n;
-            nItem.Previous = null;
-            queue.Enqueue(nItem);
+            var item = new QueueItem();
+            item.Value = n;
+            item.Previous = null;
+            queue.Enqueue(item);
             while (true)
             {
                 var previous = queue.Dequeue();
@@ -37,11 +37,13 @@
                     PrintResult(firstItem);
                     break;
                 }
+
                 if (secondItem.Value == m)
                 {
                     PrintResult(secondItem);
                     break;
                 }
+
                 if (thirdItem.Value == m)
                 {
                     PrintResult(thirdItem);
@@ -49,6 +51,7 @@
                 }
             }
         }
+
         public static void PrintResult(QueueItem item)
         {
             var result = new List<int>();
@@ -57,9 +60,9 @@
                 result.Add(item.Value);
                 item = item.Previous;
             }
+
             result.Reverse();
             Console.WriteLine(string.Join("->", result));
         }
-
     }
 }

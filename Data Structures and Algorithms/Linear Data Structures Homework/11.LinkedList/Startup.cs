@@ -1,10 +1,10 @@
-﻿using System;
-
-namespace _11.LinkedList
+﻿namespace _11.LinkedList
 {
-    class Startup
+    using System;
+
+    public class Startup
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             LinkedList<int> numbers = new LinkedList<int>();
 
@@ -12,11 +12,10 @@ namespace _11.LinkedList
             numbers.FirstElement.NextItem = new ListItem<int>(5);
             numbers.FirstElement.NextItem.NextItem = new ListItem<int>(6);
 
-            foreach(var item in numbers)
+            foreach (var item in numbers)
             {
                 Console.WriteLine(item);
             }
-
         }
     }
 }

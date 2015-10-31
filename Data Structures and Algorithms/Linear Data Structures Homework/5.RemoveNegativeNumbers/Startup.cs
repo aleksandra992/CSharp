@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+
     public class Startup
     {
         public static void Main()
@@ -18,8 +19,6 @@
 
             var positiveNumbers = numbers.Where(x => x > 0);
             Console.WriteLine("The positive numbers are {0} ", string.Join(",", positiveNumbers));
-            
-
         }
     }
 }

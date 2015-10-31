@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace _13.LinkedQueue
+﻿namespace _13.LinkedQueue
 {
+    using System.Collections.Generic;
+
     public class LinkedQueue<T>
     {
         private LinkedList<T> items;
@@ -9,8 +9,8 @@ namespace _13.LinkedQueue
 
         public LinkedQueue()
         {
-            items = new LinkedList<T>();
-            size = 0;
+            this.items = new LinkedList<T>();
+            this.size = 0;
         }
 
         public int Count
@@ -19,6 +19,7 @@ namespace _13.LinkedQueue
             {
                 return this.size;
             }
+
             set
             {
                 this.size = value;
@@ -27,23 +28,24 @@ namespace _13.LinkedQueue
 
         public void Enqueue(T item)
         {
-            if (Count == 0)
+            if (this.Count == 0)
             {
-                items.AddFirst(item);
+                this.items.AddFirst(item);
             }
             else
             {
-                items.AddAfter(items.Last, item);
+                this.items.AddAfter(this.items.Last, item);
             }
-            Count++;
+
+            this.Count++;
         }
 
         public T Dequeue()
         {
             T item;
-            item = items.First.Value;
-            items.Remove(item);
-            Count--;
+            item = this.items.First.Value;
+            this.items.Remove(item);
+            this.Count--;
             return item;
         }
     }

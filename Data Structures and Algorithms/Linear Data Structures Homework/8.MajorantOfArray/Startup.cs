@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace MajorantOfArray
+﻿namespace MajorantOfArray
 {
+    using System;
+    using System.Collections.Generic;
+
     public class Startup
     {
         public static void Main()
@@ -29,14 +29,14 @@ namespace MajorantOfArray
                     occurences[numbers[i]] = 1;
                 }
 
-                if (occurences[numbers[i]] >= numbers.Count / 2 + 1)
+                if (occurences[numbers[i]] >= (numbers.Count / 2) + 1)
                 {
                     majorant = numbers[i];
                     flag = true;
                     break;
                 }
-
             }
+
             if (flag == true)
             {
                 Console.WriteLine("The majorant is {0} ", majorant);
@@ -45,7 +45,6 @@ namespace MajorantOfArray
             {
                 Console.WriteLine("No majorant in this array");
             }
-
         }
     }
 }

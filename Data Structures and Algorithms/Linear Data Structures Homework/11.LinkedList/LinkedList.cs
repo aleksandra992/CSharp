@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace _11.LinkedList
+﻿namespace _11.LinkedList
 {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+
     public class LinkedList<T> : IEnumerable<T>
     {
         public ListItem<T> FirstElement { get; set; }

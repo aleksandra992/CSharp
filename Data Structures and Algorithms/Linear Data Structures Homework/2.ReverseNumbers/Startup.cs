@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+
     public class Startup
     {
         public static void Main()
@@ -18,7 +19,6 @@
             while (stack.Count != 0)
             {
                 Console.WriteLine(stack.Pop());
-
             }
         }
     }

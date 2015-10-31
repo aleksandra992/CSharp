@@ -2,9 +2,10 @@
 {
     using System;
     using System.Collections.Generic;
+
     public class Startup
     {
-        static void Main()
+        public static void Main()
         {
             string input;
             var numbers = new List<int>();
@@ -16,9 +17,9 @@
 
             Dictionary<int, int> occurences = new Dictionary<int, int>();
 
-            for(var i=0;i<numbers.Count;i++)
+            for (var i = 0; i < numbers.Count; i++)
             {
-                if(occurences.ContainsKey(numbers[i]))
+                if (occurences.ContainsKey(numbers[i]))
                 {
                     occurences[numbers[i]]++;
                 }
@@ -27,11 +28,11 @@
                     occurences[numbers[i]] = 1;
                 }
             }
+
             foreach (var item in occurences)
             {
                 Console.WriteLine("Number {0}--->{1}-times", item.Key, item.Value);
             }
-          
         }
     }
 }

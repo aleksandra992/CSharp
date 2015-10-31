@@ -1,30 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Labyrinth
+﻿namespace Labyrinth
 {
+    using System;
+    using System.Collections.Generic;
+
     public class Startup
     {
-
-        private static readonly int[] deltaX = { -1, 0, 1, 0 };//left,down,right,up
-        private static readonly int[] deltaY = { 0, 1, 0, -1 };
         private const string FullCell = "x";
         private const string EmptyCell = "0";
         private const string UnreachableCell = "u";
         private const string StartCell = "*";
 
+        private static readonly int[] DeltaX = { -1, 0, 1, 0 }; ////left,down,right,up
+        private static readonly int[] DeltaY = { 0, 1, 0, -1 };
+
         public static void Main()
         {
             string[,] labyrinth =
-                                 {
-                {"0", "0", "0", "x", "0", "x"},
-                {"0", "x", "0", "x", "0", "x"},
-                {"0", "*", "x", "0", "x", "0"},
-                {"0", "x", "0", "0", "0", "0"},
-                {"0", "0", "0", "x", "x", "0"},
-                {"0", "0", "0", "x", "0", "x"}
+                {
+                { "0", "0", "0", "x", "0", "x" },
+                { "0", "x", "0", "x", "0", "x" },
+                { "0", "*", "x", "0", "x", "0" },
+                { "0", "x", "0", "0", "0", "0" },
+                { "0", "0", "0", "x", "x", "0" },
+                { "0", "0", "0", "x", "0", "x" }
             };
-
 
             var startingPosition = new Position();
 
@@ -55,9 +54,9 @@ namespace Labyrinth
             while (queue.Count != 0)
             {
                 var current = queue.Dequeue();
-                for (var i = 0; i < deltaX.Length; i++)
+                for (var i = 0; i < DeltaX.Length; i++)
                 {
-                    var newPosition = new Position(current.Position.Row + deltaX[i], current.Position.Col + deltaY[i]);
+                    var newPosition = new Position(current.Position.Row + DeltaX[i], current.Position.Col + DeltaY[i]);
 
                     if (newPosition.Row >= labyrinth.GetLength(0) || newPosition.Col >= labyrinth.GetLength(1)
                         || newPosition.Row < 0 || newPosition.Col < 0)
@@ -70,16 +69,16 @@ namespace Labyrinth
                         continue;
                     }
 
-
                     if (visited[newPosition.Row, newPosition.Col] == 0)
                     {
                         queue.Enqueue(new QueueItem() { Value = current.Value + 1, Position = newPosition });
                         resultMatrix[newPosition.Row, newPosition.Col] = (current.Value + 1).ToString();
                     }
+
                     visited[newPosition.Row, newPosition.Col] = 1;
                 }
-
             }
+
             return resultMatrix;
         }
 
@@ -109,6 +108,7 @@ namespace Labyrinth
                         Console.Write(matrix[i, j] + "   ");
                     }
                 }
+
                 Console.WriteLine();
             }
         }

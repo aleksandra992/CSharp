@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace _13.LinkedQueue
+﻿namespace _13.LinkedQueue
 {
+    using System;
+
     public class Startup
     {
         public static void Main()
@@ -11,11 +11,10 @@ namespace _13.LinkedQueue
             numbers.Enqueue(5);
             numbers.Enqueue(6);
             int countOfElements = numbers.Count;
-            for(var i=0;i<countOfElements;i++)
+            for (var i = 0; i < countOfElements; i++)
             {
                 Console.WriteLine(numbers.Dequeue());
             }
-
         }
     }
 }
