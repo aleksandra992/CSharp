@@ -16,7 +16,7 @@
             Dictionary<DataReader, Thread> readers = new Dictionary<DataReader, Thread>();
             string path = "../../TextFiles/test.txt";
             DataReader newReader = new DataReader(path, ref root);
-            newReader.ReadTrie();
+            newReader.BuildTrie();
 
             var words = new StreamReader(path).ReadToEnd().Split(new char[] { ',', ' ', '\r', '\n', '\t', '.', '?', '!', '-', ':', ';' }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < 1000; i++)
