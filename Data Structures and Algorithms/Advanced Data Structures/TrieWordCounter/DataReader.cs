@@ -14,7 +14,7 @@
             this.path = path;
         }
 
-        public void ThreadRun()
+        public void ReadTrie()
         {
             for (int i = 0; i < loopCount; i++) // fake large data set buy parsing smaller file multiple times
             {
