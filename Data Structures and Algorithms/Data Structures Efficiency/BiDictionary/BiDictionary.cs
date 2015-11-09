@@ -5,7 +5,7 @@
     using System.Linq;
     using Wintellect.PowerCollections;
 
-    public class BiDictionary<K1, K2, T>
+    public class BiDictionary<K1, K2, T> where T : IEquatable<T>
     {
         private const string ErrorMessage = "Key doesn't exists.";
         private MultiDictionary<K1, T> first;

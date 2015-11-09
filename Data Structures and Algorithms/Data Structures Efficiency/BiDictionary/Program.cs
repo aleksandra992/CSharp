@@ -17,7 +17,7 @@
 
 
             Console.WriteLine(string.Join(",",biDictionary.Find(5)));
-            Console.WriteLine(string.Join(",", biDictionary.Find("Pesho", 7)));
+            Console.WriteLine(string.Join(",", biDictionary.Find("Gosho", 7)));
             Console.WriteLine(string.Join(",", biDictionary.Find(7)));
             Console.WriteLine(string.Join(",", biDictionary.Find("Pesho")));
         }
