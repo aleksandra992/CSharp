@@ -1,0 +1,6 @@
+﻿namespace MyDjikstra
+{
+    using System;
+
+
+}

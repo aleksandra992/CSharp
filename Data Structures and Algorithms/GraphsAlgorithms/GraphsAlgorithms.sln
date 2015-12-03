@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. DijkstraWithPriorityQueue", "DijkstraWithPriorityQueue\11. DijkstraWithPriorityQueue.csproj", "{CFB86489-0087-4F74-9019-4920BDEF92F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salaries", "Salaries\Salaries.csproj", "{1B83D236-12D2-4CAD-9731-FB27DC78EBD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendsOfPesho", "FriendsOfPesho\FriendsOfPesho.csproj", "{A5AD64F0-6B44-4ED1-840F-96049C31E5DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDjikstra", "MyDjikstra\MyDjikstra.csproj", "{5ADC461C-645F-41C9-AD96-82849408766D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjikstraValid", "DjikstraValid\DjikstraValid.csproj", "{7A2ED02D-D897-4131-9F4F-AD0CCB379755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalariesWithRecursion", "SalariesWithRecursion\SalariesWithRecursion.csproj", "{1D75EA96-CE8E-4298-9D4F-3CBCBEF31968}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalariesValid", "SalariesValid\SalariesValid.csproj", "{5F9F4E49-8428-4478-A149-966269D91D34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFB86489-0087-4F74-9019-4920BDEF92F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB86489-0087-4F74-9019-4920BDEF92F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB86489-0087-4F74-9019-4920BDEF92F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB86489-0087-4F74-9019-4920BDEF92F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B83D236-12D2-4CAD-9731-FB27DC78EBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B83D236-12D2-4CAD-9731-FB27DC78EBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B83D236-12D2-4CAD-9731-FB27DC78EBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B83D236-12D2-4CAD-9731-FB27DC78EBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5AD64F0-6B44-4ED1-840F-96049C31E5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AD64F0-6B44-4ED1-840F-96049C31E5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AD64F0-6B44-4ED1-840F-96049C31E5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AD64F0-6B44-4ED1-840F-96049C31E5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ADC461C-645F-41C9-AD96-82849408766D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ADC461C-645F-41C9-AD96-82849408766D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ADC461C-645F-41C9-AD96-82849408766D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ADC461C-645F-41C9-AD96-82849408766D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2ED02D-D897-4131-9F4F-AD0CCB379755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2ED02D-D897-4131-9F4F-AD0CCB379755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2ED02D-D897-4131-9F4F-AD0CCB379755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2ED02D-D897-4131-9F4F-AD0CCB379755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D75EA96-CE8E-4298-9D4F-3CBCBEF31968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D75EA96-CE8E-4298-9D4F-3CBCBEF31968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D75EA96-CE8E-4298-9D4F-3CBCBEF31968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D75EA96-CE8E-4298-9D4F-3CBCBEF31968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9F4E49-8428-4478-A149-966269D91D34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9F4E49-8428-4478-A149-966269D91D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9F4E49-8428-4478-A149-966269D91D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9F4E49-8428-4478-A149-966269D91D34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
