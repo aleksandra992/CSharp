@@ -1,0 +1,29 @@
+﻿
+<div class="panel panel-primary text-center">
+    <div class="panel-heading">
+        <h3 class="panel-title">Latest Trips</h3>
+        <div class="panel-body">
+            <table class="table ">
+                <thead>
+                    <tr>
+                        <th>Driver</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Departure Time</th>
+                        <th ng-if="vm.identity">Is Mine</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="trip in vm.trips" ng-class-even="'even-row'">
+                        <td><a href="#/drivers/{{trip.driverId}}">{{trip.driverName}}</a></td>
+                        <td>{{trip.from}}</td>
+                        <td>{{trip.to}}</td>
+                        <td><a href="#/trips/{{trip.id}}">{{trip.departureDate | date:'medium'}}</a></td>
+                        <td  ng-if="trip.isMine && vm.identity"><img style="width:20px"  ng-src="img/mine.jpg" /></td>
+                        <td ng-if="!trip.isMine && vm.identity"><img style="width:20px"  ng-src="img/not-mine.jpg" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

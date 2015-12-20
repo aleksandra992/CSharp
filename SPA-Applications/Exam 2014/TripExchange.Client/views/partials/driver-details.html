@@ -1,0 +1,34 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-4 text-center">Name: {{vm.driverDetails.name}}</div>
+        <div class="col-md-4 text-center">Number of upcoming trips: {{vm.driverDetails.numberOfUpcomingTrips}}</div>
+        <div class="col-md-4 text-center">Number of upcoming trips: {{vm.driverDetails.numberOfTotalTrips}}</div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="panel panel-primary text-center">
+            <div class="panel-heading">
+                <h3 class="panel-title">All Trips</h3>
+                <div class="panel-body">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Departure Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="trip in vm.driverDetails.trips" ng-class-even="'even-row'">
+                                <td>{{trip.from}}</td>
+                                <td>{{trip.to}}</td>
+                                <td>{{trip.departureDate | date:'medium'}}</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

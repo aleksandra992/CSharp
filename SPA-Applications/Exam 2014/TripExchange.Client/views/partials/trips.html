@@ -1,0 +1,78 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-9 text-center">
+            <h2>Trips</h2>
+        </div>
+        <div class="col-md-3">
+            <a ng-href="#/trips/create" class="btn btn-default" ng-if="vm.identity.isAuthenticated()">Create</a>
+        </div>
+    </div>
+    <div ng-if="vm.identity.isAuthenticated()">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Sort</h4>
+                <select ng-model="vm.filter.orderBy">
+                    <option value="">Select</option>
+                    <option value="driver">Driver</option>
+                    <option value="date">Date</option>
+                    <option value="seats">Seats</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <h4>Order</h4>
+                <select ng-model="vm.filter.orderType">
+                    <option value="">Select</option>
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <h4>From</h4>
+                <select ng-model="vm.filter.from">
+                    <option value="">Select city</option>
+                    <option ng-repeat="city in vm.cities" value={{city}}>
+                        {{city}}
+                    </option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <h4>To</h4>
+                <select ng-model="vm.filter.to">
+                    <option value="">Select city</option>
+                    <option ng-repeat="city in vm.cities" value="{{city}}">
+                        {{city}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-2">
+                <input id="includeFinished" type="checkbox" ng-model="vm.filter.finished"> Include finished
+                <br />
+                <input id="onlyMine" type="checkbox" ng-model="vm.filter.onlyMine"> Only mine
+            </div>
+            <div class="col-md-1">
+                <button ng-click="vm.filterTrips()" class="btn btn-default">Filter</button>
+            </div>
+            <div class="col-md-1 col-lg-offset-3">
+                <button ng-click="vm.previousPage()" class="btn btn-default">&lt;&lt;</button>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="text" id="page" ng-model="vm.filter.page" />
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div>
+                    <button ng-click="vm.nextPage()" class="btn btn-default">&gt;&gt;</button>
+                </div>
+            </div>
+
+        </div>
+        <hr />
+    </div>
+    <div class="row">
+        <div class="center-block" all-trips></div>
+    </div>
+</div>

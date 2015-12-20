@@ -1,0 +1,43 @@
+﻿<div class="container">
+    <div class="well">
+        <form name="createTripForm" class="form-horizontal">
+            <fieldset>
+                <legend>Create Trip</legend>
+                <div class="form-group">
+                    <label for="from" class="col-md-2 control-label">From</label>
+                    <div class="col-md-10">
+                        <select id="from" type="text" placeholder="From" ng-model="trip.from" required="required" class="form-control">
+                            <option ng-repeat="city in vm.cities">{{city}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="to" class="col-md-2 control-label">To</label>
+                    <div class="col-md-10">
+                        <select id="to" type="text" placeholder="To" ng-model="trip.to" required="required" class="form-control">
+                            <option ng-repeat="city in vm.cities">{{city}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="availableSeats" class="col-md-2 control-label">Available Seats</label>
+                    <div class="col-md-10">
+                        <input id="availableSeats" type="number" placeholder="Available seats" ng-model="trip.availableSeats" required="required" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="departureTime" class="col-md-2 control-label">Departure Time</label>
+                    <div class="col-md-10">
+                        <input id="departureTime" type="datetime" placeholder="Departure Time" ng-model="trip.departureTime" required="required" class="form-control" />
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <button ng-click="vm.createTrip(trip)" ng-disabled="signUpForm.$invalid" class="btn btn-primary">
+                        Create
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

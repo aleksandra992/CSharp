@@ -1,0 +1,23 @@
+﻿<div class="panel panel-primary text-center">
+    <div class="panel-heading">
+        <h3 class="panel-title">Latest Drivers</h3>
+        <div class="panel-body">
+            <table class="table ">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Upcoming Trips</th>
+                        <th>Total Trips</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="driver in vm.drivers" ng-class-even="'even-row'">
+                        <td><a href="#/drivers/{{trip.driverId}}">{{driver.name}}</a></td>
+                        <td>{{driver.numberOfUpcomingTrips}}</td>
+                        <td>{{driver.numberOfTotalTrips}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

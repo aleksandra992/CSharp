@@ -1,0 +1,13 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-8 text-center"><h3>{{vm.tripDetals.driverName}}-{{vm.tripDetals.departureDate| date:'medium'}}</h3></div>
+        <div class="col-md-3 col-md-offset-1"><button ng-disabled="vm.tripDetals.numberOfFreeSeats==0" ng-click="vm.joinTrip(vm.tripDetals.id)" class="btn btn-default">Join Trip</button></div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-4"><h4>From: <strong>{{vm.tripDetals.from}}</strong></h4></div>
+        <div class="col-md-4"><h4>To: <strong>{{vm.tripDetals.to}}</strong></h4></div>
+        <div class="col-md-4"><h4>Number of seats <strong>{{vm.tripDetals.numberOfFreeSeats}}</strong></h4></div>
+    </div>
+</div>

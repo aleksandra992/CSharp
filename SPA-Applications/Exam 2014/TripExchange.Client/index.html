@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Application</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../css/toastr.min.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+<body ng-app="myApp" ng-cloak>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#/" class="navbar-brand">Trip Exchange</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+
+                    <li>
+                        <a href="#/trips">Trips</a>
+                    </li>
+                    <li>
+                        <a href="#/drivers">Drivers</a>
+                    </li>
+
+                </ul>
+                <div ng-include="'views/partials/login.html'"></div>
+            </div>
+        </div>
+    </div>
+    <div ng-view>
+    </div>
+    <hr />
+    <footer class="text-center" ng-cloak>
+        Copyright:<strong> <a>My app</a></strong>
+        <br />
+        Powered by:<strong> <a href="http://angularjs.org/" target="_blank">AngularJS</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a></strong>
+    </footer>
+    <hr />
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/toastr/toastr.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-cookies.min.js"></script>-->
+    <script src="js/app.js"></script>
+    <script src="js/common/notifier.js"></script>
+
+    <script src="js/identity/auth.js"></script>
+    <script src="js/identity/authorization.js"></script>
+    <script src="js/identity/identity.js"></script>
+    <script src="js/identity/login-controller.js"></script>
+    <script src="js/identity/register-controller.js"></script>
+
+    <!--Controllers-->
+    <script src="js/controllers/home-controller.js"></script>
+    <script src="js/controllers/trip-details-controller.js"></script>
+    <script src="js/controllers/driver-details-controller.js"></script>
+    <script src="js/controllers/trips-controller.js"></script>
+    <script src="js/controllers/create-trip-controller.js"></script>
+
+    <!--Services-->
+    <script src="js/services/trips-service.js"></script>
+    <script src="js/common/data.js"></script>
+    <script src="js/services/drivers-service.js"></script>
+    <script src="js/services/cities-service.js"></script>
+
+    <!--Directives-->
+    <script src="js/directives/all-trips-directive.js"></script>
+    <script src="js/directives/all-drivers-directive.js"></script>
+
+</body>
+</html>
