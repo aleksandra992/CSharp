@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    function LoginController($scope, $location, notifier, identity, auth) {
+    function LoginController($rootScope,$scope, $location, notifier, identity, auth) {
         $scope.identity = identity;
 
         $scope.login = function (user, loginForm) {
@@ -10,6 +10,7 @@
                 auth.login(user).then(function (success) {
 
                     if (success) {
+                        $rootScope.$broadcast('loggedUser');
                         notifier.success('Successful login!');
                     }
                     else {
@@ -38,5 +39,5 @@
     }
 
     angular.module('myApp.controllers')
-        .controller('LoginCtrl', ['$scope', '$location', 'notifier', 'identity', 'auth', LoginController]);
+        .controller('LoginCtrl', ['$rootScope', '$scope', '$location', 'notifier', 'identity', 'auth', LoginController]);
 }());

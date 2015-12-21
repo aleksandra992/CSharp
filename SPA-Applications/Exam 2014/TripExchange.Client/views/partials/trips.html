@@ -28,21 +28,26 @@
             </div>
             <div class="col-md-3">
                 <h4>From</h4>
-                <select ng-model="vm.filter.from">
+                <select kendo-dropdownlist k-data-source="vm.cities">
+
+                </select>
+                <!--<select ng-model="vm.filter.from">
                     <option value="">Select city</option>
                     <option ng-repeat="city in vm.cities" value={{city}}>
                         {{city}}
                     </option>
-                </select>
-            </div>
+                </select>-->
+                </div>
             <div class="col-md-3">
                 <h4>To</h4>
-                <select ng-model="vm.filter.to">
+                <input ng-model="vm.filter.to" kendo-autocomplete k-data-source="vm.cities" />
+                <!--<select ng-model="vm.filter.to">
                     <option value="">Select city</option>
                     <option ng-repeat="city in vm.cities" value="{{city}}">
                         {{city}}
                     </option>
-                </select>
+                </select>-->
+                </div>
             </div>
         </div>
         <hr />
@@ -55,7 +60,11 @@
             <div class="col-md-1">
                 <button ng-click="vm.filterTrips()" class="btn btn-default">Filter</button>
             </div>
-            <div class="col-md-1 col-lg-offset-3">
+            <div class="col-md-4 col-md-offset-4">
+                <div pager></div>
+            </div>
+            
+            <!--<div class="col-md-1 col-lg-offset-3">
                 <button ng-click="vm.previousPage()" class="btn btn-default">&lt;&lt;</button>
             </div>
             <div class="col-md-2">
@@ -67,7 +76,7 @@
                 <div>
                     <button ng-click="vm.nextPage()" class="btn btn-default">&gt;&gt;</button>
                 </div>
-            </div>
+            </div>-->
 
         </div>
         <hr />

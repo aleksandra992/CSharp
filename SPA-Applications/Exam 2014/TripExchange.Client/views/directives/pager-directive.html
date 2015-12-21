@@ -1,0 +1,26 @@
+﻿<!--<div class="row">
+    <div class="col-md-offset-8 col-md-1">
+        <button class="btn btn-info" ng-click="previousPage()" ng-disabled="request.page == 1">&lt;&lt;</button>
+    </div>
+    <div class="col-md-2">
+        <input type="text" class="form-control" ng-model="request.page" value="1" />
+    </div>
+    <div class="col-md-1">
+        <button class="btn btn-info pull-right" ng-click="nextPage()">&gt;&gt;</button>
+    </div>
+</div>-->
+
+
+<div class="col-md-2">
+    <button ng-click="vm.previousPage()" class="btn btn-default">&lt;&lt;</button>
+</div>
+<div class="col-md-4">
+    <div class="form-group">
+        <input type="number" id="page" ng-model="vm.filter.page" value="1" class="form-control" />
+    </div>
+</div>
+<div class="col-md-2">
+    <div>
+        <button ng-click="vm.nextPage()" class="btn btn-default">&gt;&gt;</button>
+    </div>
+</div>

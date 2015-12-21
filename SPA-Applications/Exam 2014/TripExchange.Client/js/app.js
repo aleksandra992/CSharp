@@ -40,9 +40,10 @@
     }
 
     angular.module('myApp.services', []);
-    angular.module('myApp.directives', [])
-    angular.module('myApp.controllers', ['myApp.services', 'myApp.directives']);
-    angular.module('myApp', ['ngRoute', 'ngCookies', 'myApp.controllers']).
+    angular.module('myApp.directives', []);
+    angular.module('myApp.filters', []);
+    angular.module('myApp.controllers', ['myApp.services', 'myApp.directives', 'myApp.filters']);
+    angular.module('myApp', ['ngRoute', 'ngCookies', 'myApp.controllers', 'kendo.directives']).
         config(['$routeProvider', config])
         .value('toastr', toastr)
         .constant('baseServiceUrl', 'http://localhost:1337');

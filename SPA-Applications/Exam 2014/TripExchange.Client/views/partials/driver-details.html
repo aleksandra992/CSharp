@@ -2,7 +2,31 @@
     <div class="row">
         <div class="col-md-4 text-center">Name: {{vm.driverDetails.name}}</div>
         <div class="col-md-4 text-center">Number of upcoming trips: {{vm.driverDetails.numberOfUpcomingTrips}}</div>
-        <div class="col-md-4 text-center">Number of upcoming trips: {{vm.driverDetails.numberOfTotalTrips}}</div>
+        <div class="col-md-4 text-center">Number of total trips: {{vm.driverDetails.numberOfTotalTrips}}</div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input id="isDriver" type="checkbox" ng-model="vm.onlyMine"> Only mine trips
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <input id="isDriver" type="checkbox" ng-model="vm.onlyDriver"> Only driver trips
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <select ng-model="vm.sort">
+                    <option value="">None</option>
+                    <option value="from">From</option>
+                    <option value="to">To</option>
+                    <option value="departureDate">Departure Time</option>
+                </select>
+            </div>
+        </div>
     </div>
     <br />
     <br />
@@ -14,13 +38,15 @@
                     <table class="table ">
                         <thead>
                             <tr>
+                                <th>Driver</th>
                                 <th>From</th>
                                 <th>To</th>
                                 <th>Departure Time</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="trip in vm.driverDetails.trips" ng-class-even="'even-row'">
+                            <tr ng-repeat="trip in vm.driverDetails.trips | tripsFilter:vm.driverDetails.name:vm.onlyMine:vm.onlyDriver | orderBy:vm.sort">
+                                <td>{{trip.driverName}}</td>
                                 <td>{{trip.from}}</td>
                                 <td>{{trip.to}}</td>
                                 <td>{{trip.departureDate | date:'medium'}}</a></td>

@@ -66,18 +66,38 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\BlueOpal\editor.png" />
+    <Content Include="css\BlueOpal\imagebrowser.png" />
+    <Content Include="css\BlueOpal\indeterminate.gif" />
+    <Content Include="css\BlueOpal\loading-image.gif" />
+    <Content Include="css\BlueOpal\loading.gif" />
+    <Content Include="css\BlueOpal\loading_2x.gif" />
+    <Content Include="css\BlueOpal\markers.png" />
+    <Content Include="css\BlueOpal\markers_2x.png" />
+    <Content Include="css\BlueOpal\slider-h.gif" />
+    <Content Include="css\BlueOpal\slider-v.gif" />
+    <Content Include="css\BlueOpal\sprite.png" />
+    <Content Include="css\BlueOpal\sprite_2x.png" />
+    <Content Include="css\BlueOpal\sprite_kpi.png" />
+    <Content Include="css\BlueOpal\sprite_kpi_2x.png" />
+    <Content Include="css\kendo.blueopal.min.css" />
+    <Content Include="css\kendo.common.min.css" />
     <Content Include="img\mine.jpg" />
     <Content Include="img\not-mine.jpg" />
     <Content Include="js\common\data.js" />
     <Content Include="js\controllers\create-trip-controller.js" />
     <Content Include="js\controllers\driver-details-controller.js" />
     <Content Include="js\controllers\home-controller.js" />
+    <Content Include="js\controllers\main-controller.js" />
     <Content Include="js\controllers\trip-details-controller.js" />
     <Content Include="js\controllers\trips-controller.js" />
     <Content Include="js\directives\all-drivers-directive.js" />
     <Content Include="js\directives\all-trips-directive.js" />
+    <Content Include="js\directives\pager-directive.js" />
+    <Content Include="js\filters\driversFilter.js" />
     <Content Include="js\services\cities-service.js" />
     <Content Include="js\services\drivers-service.js" />
+    <Content Include="js\services\route-auths-service.js" />
     <Content Include="js\services\trips-service.js" />
     <Content Include="lib\angular-cookies\angular-cookies.js" />
     <Content Include="lib\angular-cookies\angular-cookies.min.js" />
@@ -89,6 +109,7 @@
     <Content Include="lib\angular\angular.js" />
     <Content Include="lib\angular\angular.min.js" />
     <Content Include="lib\angular\index.js" />
+    <Content Include="lib\kendo\kendo.web.min.js" />
     <Content Include="packages.config" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
@@ -139,6 +160,7 @@
     <Content Include="lib\toastr\toastr.min.js" />
     <Content Include="views\directives\all-drivers-directive.html" />
     <Content Include="views\directives\all-trips-directive.html" />
+    <Content Include="views\directives\pager-directive.html" />
     <Content Include="views\partials\create-trip.html" />
     <Content Include="views\partials\driver-details.html" />
     <Content Include="views\partials\home.html" />

@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="../css/toastr.min.css" />
     <link rel="stylesheet" href="../css/app.css" />
+    <link href="css/kendo.common.min.css" rel="stylesheet" />
+    <link href="css/kendo.blueopal.min.css" rel="stylesheet" />
 </head>
-<body ng-app="myApp" ng-cloak>
+<body ng-app="myApp" ng-cloak ng-controller="MainController">
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
@@ -49,6 +51,7 @@
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-cookies/angular-cookies.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/kendo/kendo.web.min.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-cookies.min.js"></script>-->
@@ -67,16 +70,22 @@
     <script src="js/controllers/driver-details-controller.js"></script>
     <script src="js/controllers/trips-controller.js"></script>
     <script src="js/controllers/create-trip-controller.js"></script>
+    <script src="js/controllers/main-controller.js"></script>
 
     <!--Services-->
     <script src="js/services/trips-service.js"></script>
     <script src="js/common/data.js"></script>
     <script src="js/services/drivers-service.js"></script>
     <script src="js/services/cities-service.js"></script>
+    <script src="js/services/route-auths-service.js"></script>
 
     <!--Directives-->
     <script src="js/directives/all-trips-directive.js"></script>
     <script src="js/directives/all-drivers-directive.js"></script>
+    <script src="js/directives/pager-directive.js"></script>
+
+    <!--Filter-->
+    <script src="js/filters/driversFilter.js"></script>
 
 </body>
 </html>
