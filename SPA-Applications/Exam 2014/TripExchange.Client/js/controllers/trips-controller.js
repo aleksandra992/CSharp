@@ -2,6 +2,7 @@
     'use strict'
     function TripsController($rootScope, $scope, cities, trips, identity) {
         var vm = this;
+        vm.currentPage = 1;
         vm.filter = [];
         vm.filter.page = 1;
         vm.identity = identity;

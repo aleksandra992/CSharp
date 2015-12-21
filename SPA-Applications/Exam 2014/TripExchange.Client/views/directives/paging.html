@@ -1,0 +1,8 @@
+﻿
+<div class="row text-center">
+    <ul class="pagination">
+        <li ng-repeat="page in vm.pages" ng-class="page == vm.currentPage ? 'active' : ''">
+            <button class="btn-sm btn-primary" ng-click="vm.filter.page = page; vm.filterTrips()">{{page}}</button>
+        </li>
+    </ul>
+</div>

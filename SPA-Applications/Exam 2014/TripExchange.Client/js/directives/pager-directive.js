@@ -17,8 +17,10 @@
                     }
 
                     scope.vm.nextPage = function () {
-                        scope.vm.filter.page++;
-                        scope.vm.filterTrips();
+                        if (scope.vm.trips.length != 0) {
+                            scope.vm.filter.page++;
+                            scope.vm.filterTrips();
+                        }
                     }
                 }
             }

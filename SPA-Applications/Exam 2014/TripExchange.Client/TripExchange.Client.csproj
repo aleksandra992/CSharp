@@ -94,6 +94,7 @@
     <Content Include="js\directives\all-drivers-directive.js" />
     <Content Include="js\directives\all-trips-directive.js" />
     <Content Include="js\directives\pager-directive.js" />
+    <Content Include="js\directives\paging-directive.js" />
     <Content Include="js\filters\driversFilter.js" />
     <Content Include="js\services\cities-service.js" />
     <Content Include="js\services\drivers-service.js" />
@@ -161,6 +162,7 @@
     <Content Include="views\directives\all-drivers-directive.html" />
     <Content Include="views\directives\all-trips-directive.html" />
     <Content Include="views\directives\pager-directive.html" />
+    <Content Include="views\directives\paging.html" />
     <Content Include="views\partials\create-trip.html" />
     <Content Include="views\partials\driver-details.html" />
     <Content Include="views\partials\home.html" />
