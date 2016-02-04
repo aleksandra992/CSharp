@@ -1,0 +1,20 @@
+﻿@using SimpleInformationalSystem.Models
+    @model IEnumerable<EmployeeViewModel>
+
+    <table class="table-striped">
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Title
+            </th>
+        </tr>
+        @foreach (var employee in Model)
+        {
+            @Html.Partial("_Employee", employee);
+        }
+    </table>

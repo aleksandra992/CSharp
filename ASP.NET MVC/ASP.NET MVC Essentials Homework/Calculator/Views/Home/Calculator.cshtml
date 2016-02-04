@@ -1,0 +1,34 @@
+﻿@model Calculator.Models.InputCalculatorModel
+@using (Html.BeginForm("Calculator", "Home", FormMethod.Get))
+{
+    @Html.LabelFor(x => x.Quantity, new { @class = "control-label" })
+    @Html.TextBoxFor(x => x.Quantity, new { type = "Number", @class = "form-control" })
+    @Html.LabelFor(x => x.Type, new { @class = "control-label" })
+    @Html.DropDownListFor(x => x.Type, new SelectList(Model.Types, "Name", "Name"), new { @class = "form-control" })
+    @Html.LabelFor(x => x.Kilo, new { @class = "control-control" })
+    @Html.DropDownListFor(x => x.Kilo, new SelectList(Model.Kilos), new { @class = "form-control" })
+    <input type="submit" value="Calculate" />
+    <table class="table table-striped">
+        <tr>
+            <th colspan="2">
+                @if (Model.Kilo == 1000)
+                {
+                    @:Bandwidth(Kilo=@Model.Kilo)
+                }
+                else
+                {
+                    @:Storage(Kilo=@Model.Kilo)
+                }
+            </th>
+        </tr>
+        @foreach (var item in Model.Types)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Value</td>
+            </tr>
+        }
+
+    </table>
+}
+
